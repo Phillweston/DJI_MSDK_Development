@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flycloud.autofly.ux.view.button.ExpandableBreathingButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="50dp"
+    app:ebbButtonText="3D"
+    app:ebbButtonTextColor="@color/white"
+    app:ebbButtonTextSize="@dimen/default_text_size_medium"
+    app:ebbInnerCircleColor="#0877f4"
+    app:ebbItemTextColor="@color/white"
+    app:ebbItemTextSize="@dimen/default_text_size_normal"
+    app:ebbRectBackgroundColor="#5db8ff">
+
+</com.flycloud.autofly.ux.view.button.ExpandableBreathingButton>

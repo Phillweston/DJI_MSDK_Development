@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.ew.autofly.widgets.dji.DjiCameraControlsWidget
+        android:id="@+id/CameraCaptureWidget"
+        android:layout_width="50pt"
+        android:layout_height="213pt"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        tools:ignore="RtlHardcoded" />
+
+    <dji.ux.panel.CameraSettingAdvancedPanel
+        android:layout_width="180pt"
+        android:layout_height="263pt"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/CameraCaptureWidget"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:ignore="RtlHardcoded" />
+
+    <dji.ux.panel.CameraSettingExposurePanel
+        android:layout_width="180pt"
+        android:layout_height="263pt"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/CameraCaptureWidget"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:ignore="RtlHardcoded" />
+
+    <RelativeLayout
+        android:id="@+id/rl_ai_control"
+        android:layout_width="50pt"
+        android:layout_height="213pt"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true">
+
+        <com.flycloud.autofly.ux.view.button.ExpandableBreathingButton
+            android:id="@+id/btn_ai"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_centerInParent="true"
+            app:ebbButtonText="AI"
+            app:ebbButtonTextColor="@color/white"
+            app:ebbButtonTextSize="@dimen/default_text_size_normal"
+            app:ebbInnerCircleColor="#0877f4"
+            app:ebbItemTextColor="@color/white"
+            app:ebbItemTextSize="@dimen/default_text_size_medium"
+            app:ebbRectBackgroundColor="#5db8ff">
+
+        </com.flycloud.autofly.ux.view.button.ExpandableBreathingButton>
+
+        <ProgressBar
+            android:id="@+id/progress_capture"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/anim_loading"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

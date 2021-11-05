@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BaseSettingView">
+        <!--主标题-->
+        <attr name="design_bsv_main_title" format="string" />
+        <!--描述-->
+        <attr name="design_bsv_description" format="string" />
+
+
+    </declare-styleable>
+
+    <declare-styleable name="SettingSpinnerView">
+        <!--下拉选项控件宽度-->
+        <attr name="design_ssv_option_width" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingTextView">
+        <!--文字-->
+        <attr name="design_stv_text" format="string" />
+    </declare-styleable>
+
+</resources>

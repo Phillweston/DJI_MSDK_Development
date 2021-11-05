@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clipChildren="false">
+
+        <com.ew.autofly.widgets.CustomBar
+            android:id="@+id/range"
+            style="@style/Widget.SeekBar.Normal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:thumbOffset="@dimen/seekbar_offset" />
+
+        <TextView android:id="@+id/text_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/range"
+            android:layout_marginStart="10dp"
+            android:text="-120"
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+        <TextView android:id="@+id/text_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/range"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:text="500"
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit"
+        style="@style/editTextStyle"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/amount_indecrease_edit"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:padding="4dp"
+        android:singleLine="true" />
+
+</LinearLayout>

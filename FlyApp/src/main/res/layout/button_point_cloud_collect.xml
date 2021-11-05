@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/btn_pointcloud_collect"
+        android:layout_width="@dimen/map_btn_large_w_p"
+        android:layout_height="@dimen/map_btn_large_h_p"
+        android:layout_marginBottom="4pt"
+        android:layout_marginRight="10pt"
+        android:background="@drawable/bg_common_btn_shape"
+        android:text="点云采集"
+        android:textColor="@color/selector_common_btn_textcolor"
+        android:textSize="18sp">
+</Button>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_waypoint_record_panel"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/btn_add_waypoint"
+        android:layout_width="@dimen/study_waypoint_btn_size"
+        android:layout_height="@dimen/study_waypoint_btn_size"
+        android:padding="@dimen/study_waypoint_btn_padding"
+        android:src="@drawable/ic_study_waypoint_add" />
+
+    <ImageView
+        android:id="@+id/btn_edit_waypoint"
+        android:layout_width="@dimen/study_waypoint_btn_size"
+        android:layout_height="@dimen/study_waypoint_btn_size"
+        android:padding="@dimen/study_waypoint_btn_padding"
+        android:src="@drawable/ic_study_waypoint_edit" />
+
+    <ImageView
+        android:id="@+id/btn_stop_record"
+        android:layout_width="@dimen/study_waypoint_btn_size"
+        android:layout_height="@dimen/study_waypoint_btn_size"
+        android:padding="@dimen/study_waypoint_btn_padding"
+        android:src="@drawable/ic_study_waypoint_save" />
+
+    <ImageView
+        android:id="@+id/btn_cancel_record"
+        android:layout_width="@dimen/study_waypoint_btn_size"
+        android:layout_height="@dimen/study_waypoint_btn_size"
+        android:padding="@dimen/study_waypoint_btn_padding"
+        android:src="@drawable/ic_study_waypoint_cancel" />
+
+</LinearLayout>

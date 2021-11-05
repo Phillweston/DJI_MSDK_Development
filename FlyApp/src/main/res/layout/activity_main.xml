@@ -1,0 +1,135 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_height"
+            android:background="@drawable/title_color_gradient"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/leftmenu"
+                android:layout_width="@dimen/top_bar_height"
+                android:layout_height="@dimen/top_bar_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_toRightOf="@+id/leftmenu"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/top_icon_margin"
+                android:textColor="#fff"
+                android:textSize="@dimen/top_bar_left_font" />
+
+            <TextView
+                android:id="@+id/tv_title_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="@dimen/top_icon_margin"
+                android:textColor="#25e0e7"
+                android:textSize="@dimen/top_bar_center_font" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title_bar"
+            android:orientation="vertical" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/top_bar_height">
+
+        <RelativeLayout
+            android:id="@+id/rl_user"
+            android:layout_width="@dimen/main_listview_width"
+            android:layout_height="wrap_content"
+            android:background="@color/menu_item_normal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rl_user_logo"
+                android:layout_width="52pt"
+                android:layout_height="52pt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_user_logo"
+                android:visibility="visible">
+
+                <com.flycloud.autofly.ux.view.CircleImageView
+                    android:id="@+id/iv_user_logo"
+                    android:layout_width="52pt"
+                    android:layout_height="52pt"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_user_logo" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_user_logo"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:text="未登录"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_user"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="@dimen/main_listview_width"
+                android:layout_height="1dp"
+                android:background="#3A3E47" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/menu_item_normal">
+
+                <ListView
+                    android:id="@+id/left_list_view"
+                    android:layout_width="@dimen/main_listview_width"
+                    android:layout_height="wrap_content"
+                    android:choiceMode="singleChoice"
+                    android:divider="#3A3E47"
+                    android:dividerHeight="1dp"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

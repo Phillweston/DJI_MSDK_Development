@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="setting_main_title_text_color">@color/white</color>
+    <color name="setting_description_text_color">@color/gray_light</color>
+    <color name="setting_item_selected_color">#5f25e0e7</color>
+    <color name="setting_default_text_color">@color/white</color>
+    <color name="setting_default_text_color_gray">#9c9c9c</color>
+    <color name="setting_default_text_color_blue">@color/blue</color>
+
+    <color name="design_black_transparent">#b2000000</color>
+</resources>

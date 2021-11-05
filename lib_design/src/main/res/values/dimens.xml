@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="setting_dialog_optional_checkbox_margin_left">30dp</dimen>
+    <dimen name="setting_title_height">48dp</dimen>
+    <dimen name="setting_main_title_text_size">14dp</dimen>
+    <dimen name="setting_description_text_size">12dp</dimen>
+    <dimen name="setting_item_common_height">52dp</dimen>
+    <dimen name="setting_horizontal_padding">20dp</dimen>
+    <dimen name="setting_description_padding_bottom">12dp</dimen>
+</resources>

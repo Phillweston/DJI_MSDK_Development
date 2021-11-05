@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ux_item_lv_pop_category_textsize">14dp</dimen>
+    <dimen name="button_corner_radius">10dp</dimen>
+    <dimen name="edittext_corner_radius">5dp</dimen>
+    <dimen name="radio_corner_radius">3dp</dimen>
+
+    <dimen name="default_text_size_large">18sp</dimen>
+    <dimen name="default_text_size_medium">16sp</dimen>
+    <dimen name="default_text_size_normal">14sp</dimen>
+    <dimen name="default_text_size_min">12sp</dimen>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/fl_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:showDividers="middle"
+                android:orientation="vertical"
+                android:divider="@drawable/bg_setting_divider_shape"
+                android:paddingLeft="@dimen/setting_horizontal_padding"
+                android:paddingRight="@dimen/setting_horizontal_padding">
+
+                <com.flycloud.autofly.design.view.setting.SettingSpinnerView
+                    android:id="@+id/ss_video_source"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:design_bsv_main_title="视频源切换"/>
+
+                <com.flycloud.autofly.design.view.setting.SettingSpinnerView
+                    android:id="@+id/ss_display_dual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:design_bsv_main_title="双光切换"
+                    android:visibility="gone"/>
+
+                <com.flycloud.autofly.design.view.setting.SettingSpinnerView
+                    android:id="@+id/ss_frequency_band"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:design_bsv_main_title="工作频段"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_bottom_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llLeftButton"
+        android:layout_marginTop="6dp"
+        android:alpha="0.7"
+        android:background="@drawable/tv_moitorinfo_left_radius"
+        android:padding="@dimen/top_icon_margin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/top_bar_font_small"
+        android:visibility="gone" />
+
+    <!-- 左边按钮-->
+    <LinearLayout
+        android:id="@+id/llLeftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:gravity="center_horizontal|left"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_left_btn_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imgMapMode"
+                android:layout_width="@dimen/map_btn_small_p"
+                android:layout_height="@dimen/map_btn_small_p"
+                android:layout_marginLeft="4pt"
+                android:layout_marginTop="4pt"
+                android:background="@drawable/bg_common_btn_shape"
+                android:scaleType="centerCrop"
+                android:src="@drawable/selector_btn_plane_map" />
+
+            <ImageButton
+                android:id="@+id/ib_more"
+                android:layout_width="@dimen/map_btn_small_p"
+                android:layout_height="@dimen/map_btn_small_p"
+                android:layout_marginLeft="4pt"
+                android:layout_marginTop="4pt"
+                android:background="@drawable/bg_common_btn_shape"
+                android:scaleType="centerCrop"
+                android:src="@drawable/selector_btn_more" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_kml_tower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imgBtnKML"
+                android:layout_width="@dimen/map_btn_small_p"
+                android:layout_height="@dimen/map_btn_small_p"
+                android:layout_marginLeft="4pt"
+                android:layout_marginTop="4pt"
+                android:background="@drawable/bg_common_btn_shape"
+                android:scaleType="centerCrop"
+                android:src="@drawable/btn_kml_selector" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_draw_polygon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4pt"
+            android:layout_marginTop="4pt">
+
+            <com.ew.autofly.widgets.switchview.SwitchButton
+                android:id="@+id/imgBtnCircle"
+                android:layout_width="@dimen/map_btn_small_p"
+                android:layout_height="@dimen/map_btn_small_p"
+                android:background="@drawable/bg_common_btn_shape"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/ib_choose_tower"
+                android:layout_width="@dimen/map_btn_small_p"
+                android:layout_height="@dimen/map_btn_small_p"
+                android:layout_marginLeft="4pt"
+                android:background="@drawable/bg_common_btn_shape"
+                android:scaleType="centerCrop"
+                android:src="@drawable/selector_btn_add_new_tower"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imgBtnLocation"
+            android:layout_width="@dimen/map_btn_small_p"
+            android:layout_height="@dimen/map_btn_small_p"
+            android:layout_marginLeft="4pt"
+            android:layout_marginTop="4pt"
+            android:layout_marginBottom="4pt"
+            android:background="@drawable/bg_common_btn_shape"
+            android:contentDescription="@string/DESCRIPTION_MAP_LOCATION"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_gps_selector" />
+    </LinearLayout>
+
+    <!--右边按钮-->
+    <LinearLayout
+        android:id="@+id/ll_right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingRight="6pt"
+        android:paddingBottom="4pt">
+
+        <include layout="@layout/layout_frag_map_base_task_widgets" />
+
+        <ImageButton
+            android:id="@+id/imgBtnSettings"
+            android:layout_width="35pt"
+            android:layout_height="35pt"
+            android:layout_marginBottom="4pt"
+            android:background="@drawable/bg_common_btn_shape"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_setting_selector"
+            android:visibility="gone" />
+
+        <include layout="@layout/layout_frag_map_base_flight_control_widgets" />
+
+        <LinearLayout
+            android:id="@+id/ll_frag_map_base_start_control_widgets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/imgBtnFlight"
+                android:layout_width="@dimen/map_btn_large_w_p"
+                android:layout_height="@dimen/map_btn_large_h_p"
+                android:background="@drawable/bg_common_btn_shape"
+                android:enabled="false"
+                android:text="开  始"
+                android:textColor="@color/selector_common_btn_textcolor"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_assistant_function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10pt"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/tv_weather_detail"
+            android:layout_width="@dimen/map_btn_small_p"
+            android:layout_height="@dimen/map_btn_small_p"
+            android:layout_marginRight="5pt"
+            android:background="@drawable/bg_common_btn_shape"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_weather_selector" />
+
+
+        <ImageButton
+            android:id="@+id/tv_navigation"
+            android:layout_width="@dimen/map_btn_small_p"
+            android:layout_height="@dimen/map_btn_small_p"
+            android:layout_marginRight="5pt"
+            android:background="@drawable/bg_common_btn_shape"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_navigation_selector" />
+
+        <ImageButton
+            android:id="@+id/tv_noflyzone"
+            android:layout_width="@dimen/map_btn_small_p"
+            android:layout_height="@dimen/map_btn_small_p"
+            android:layout_marginRight="5pt"
+            android:background="@drawable/bg_common_btn_shape"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_noflyzone_selector" />
+
+        <ImageButton
+            android:id="@+id/tv_spotlight"
+            android:layout_width="@dimen/map_btn_small_p"
+            android:layout_height="@dimen/map_btn_small_p"
+            android:layout_marginRight="5pt"
+            android:background="@drawable/bg_common_btn_shape"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_spotlight_selector"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/tv_speaker"
+            android:layout_width="@dimen/map_btn_small_p"
+            android:layout_height="@dimen/map_btn_small_p"
+            android:layout_marginRight="5pt"
+            android:background="@drawable/bg_common_btn_shape"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_speaker_selector"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/tv_beacon"
+            android:layout_width="@dimen/map_btn_small_p"
+            android:layout_height="@dimen/map_btn_small_p"
+            android:layout_marginRight="5pt"
+            android:background="@drawable/bg_common_btn_shape"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_beacon_selector"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/center_point"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:layout_centerInParent="true"
+        android:background="@color/trans" />
+
+    <ImageView
+        android:id="@+id/iv_weather_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/center_point"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_weather_loc"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iv_weather_loc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3pt"
+        android:background="@drawable/bg_common_btn_shape_tans"
+        android:paddingLeft="10pt"
+        android:paddingTop="3pt"
+        android:paddingRight="10pt"
+        android:paddingBottom="3pt"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

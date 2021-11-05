@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/map_base_btn_operation_margin">
+
+    <ImageButton
+        android:id="@+id/btn_add_waypoint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_common_btn_shape"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/btn_add_waypoint_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="@string/dimen_main_small_btn_ratio"
+        app:layout_constraintEnd_toStartOf="@id/btn_stop_record"
+        app:layout_constraintHeight_percent="0.1" />
+
+    <ImageButton
+        android:id="@+id/btn_stop_record"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_common_btn_shape"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/btn_stop_and_save_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="@string/dimen_main_small_btn_ratio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

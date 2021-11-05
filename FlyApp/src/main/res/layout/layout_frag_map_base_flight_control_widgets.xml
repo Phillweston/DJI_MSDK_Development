@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageButton
+        android:id="@+id/imgBtnGoHome"
+        android:layout_width="60pt"
+        android:layout_height="60pt"
+        android:layout_marginBottom="18pt"
+        android:background="@drawable/btn_icon_go_home_selector"
+        android:scaleType="centerCrop"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/imgBtnPause"
+        android:layout_width="@dimen/map_btn_large_w_p"
+        android:layout_height="@dimen/map_btn_large_h_p"
+        android:layout_marginBottom="4pt"
+        android:background="@drawable/bg_common_btn_shape"
+        android:text="@string/DESCRIPTION_PAUSE_TASK"
+        android:textColor="@color/selector_common_btn_textcolor"
+        android:textSize="18sp"
+        android:contentDescription="@string/DESCRIPTION_PAUSE_TASK"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/imgBtnResume"
+        android:layout_width="@dimen/map_btn_large_w_p"
+        android:layout_height="@dimen/map_btn_large_h_p"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4pt"
+        android:background="@drawable/bg_common_btn_shape"
+        android:text="@string/DESCRIPTION_RESUME_TASK"
+        android:textColor="@color/selector_common_btn_textcolor"
+        android:textSize="18sp"
+        android:contentDescription="@string/DESCRIPTION_RESUME_TASK"
+        android:visibility="gone"/>
+
+</merge>

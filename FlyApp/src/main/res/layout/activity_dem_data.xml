@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/map_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btn_download_dem"
+        android:layout_toRightOf="@+id/btn_download_dem" />
+
+    <ImageView
+        android:id="@+id/btn_download_dem"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/statebar"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/map_btn_margin_small"
+        android:layout_marginRight="@dimen/map_btn_margin_small"
+        android:src="@drawable/picture_already_download"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_location"
+        android:layout_width="@dimen/map_btn_small"
+        android:layout_height="@dimen/map_btn_small"
+        android:layout_above="@+id/statebar"
+        android:layout_marginBottom="@dimen/map_btn_margin_small"
+        android:layout_marginLeft="@dimen/map_btn_margin_small"
+        android:background="#00000000"
+        android:contentDescription="@string/DESCRIPTION_MAP_LOCATION"
+        android:scaleType="centerCrop"
+        android:src="@drawable/btn_locator_selector" />
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/back"/>
+
+    <RelativeLayout
+        android:id="@+id/statebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

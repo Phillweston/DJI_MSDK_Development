@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/menu_item_normal"
+        android:gravity="bottom|right"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btn_new"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="新增"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_append"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="更新"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="删除"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_import"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="导入"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_dem_lists"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom"
+        android:layout_below="@id/rg_mode"
+        android:background="@color/menu_item_normal"
+        android:divider="@null" />
+
+</RelativeLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/rl_title"
+        layout="@layout/layout_dialog_title_bar" />
+
+   <!-- <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/menu_item_selected"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_loadtask_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择文件"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size_medium" />
+
+        <ImageView
+            android:id="@+id/ic_sort_file"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_loadtask_title"
+            android:src="@drawable/ic_sort" />
+
+
+        <ImageButton
+            android:id="@+id/tv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/trans"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_close_loadtask_selector" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@id/tv_loadtask_title"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/tv_loadtask_title"
+            android:padding="1dp"
+            android:src="@drawable/icon_load_kml" />
+    </RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginTop="3dp"
+        android:background="@color/menu_item_normal"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tl_switch_content"
+            style="@style/Default_Dialog_TabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+
+        <View style="@style/default_dialog_space_line" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_file_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/default_dialog_space_line"
+        android:layout_above="@+id/ll_bottom" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/menu_item_normal"
+        android:gravity="bottom|right"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btn_cloud_import"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/text_btn_height"
+            android:layout_weight="2"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="@dimen/text_btn_padding"
+            android:text="云端kml"
+            android:textColor="@color/text_btn_text_color"
+            android:textSize="@dimen/text_btn_text_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_new"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/text_btn_height"
+            android:layout_weight="1"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="@dimen/text_btn_padding"
+            android:text="新增"
+            android:textColor="@color/text_btn_text_color"
+            android:textSize="@dimen/text_btn_text_size"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_append"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/text_btn_height"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="@dimen/text_btn_padding"
+            android:text="追加"
+            android:textColor="@color/text_btn_text_color"
+            android:textSize="@dimen/text_btn_text_size"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/btn_export"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/text_btn_height"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="@dimen/text_btn_padding"
+            android:text="导出"
+            android:textColor="@color/text_btn_text_color"
+            android:textSize="@dimen/text_btn_text_size"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/text_btn_height"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="@dimen/text_btn_padding"
+            android:text="删除"
+            android:textColor="@color/text_btn_text_color"
+            android:textSize="@dimen/text_btn_text_size"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_import"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/text_btn_height"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="@dimen/text_btn_padding"
+            android:text="导入"
+            android:textColor="@color/text_btn_text_color"
+            android:textSize="@dimen/text_btn_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

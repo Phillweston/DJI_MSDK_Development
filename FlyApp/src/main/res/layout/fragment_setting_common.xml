@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/fl_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:showDividers="middle"
+                android:orientation="vertical"
+                android:divider="@drawable/bg_setting_divider_shape"
+                android:paddingLeft="@dimen/setting_horizontal_padding"
+                android:paddingRight="@dimen/setting_horizontal_padding">
+
+                <com.flycloud.autofly.design.view.setting.SettingCheckView
+                    android:id="@+id/sc_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:design_bsv_main_title="显示网格线"/>
+
+                <com.flycloud.autofly.design.view.setting.SettingEnterView
+                    android:id="@+id/ss_map_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:design_bsv_main_title="@string/setting_map"
+                    app:design_bsv_description="@string/setting_map_description"/>
+
+                <com.flycloud.autofly.design.view.setting.SettingEnterView
+                    android:id="@+id/se_live"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:design_bsv_main_title="@string/video_live"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_second_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

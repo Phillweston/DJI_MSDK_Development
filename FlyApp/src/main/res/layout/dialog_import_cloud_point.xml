@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/rl_title"
+        layout="@layout/layout_dialog_title_bar" />
+
+    <LinearLayout
+        android:layout_below="@id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:background="@color/menu_item_normal"
+        android:orientation="vertical">
+
+        <com.flycloud.autofly.ux.view.DropDownMenu
+            android:id="@+id/dropDownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:dddividerColor="@color/gray"
+            app:ddmaskColor="@color/drop_down_mask_color"
+            app:ddmenuBackgroundColor="@color/white"
+            app:ddmenuMenuHeightPercent="0.5"
+            app:ddmenuSelectedIcon="@drawable/ic_drop_down_selected_icon"
+            app:ddmenuTextSize="13sp"
+            app:ddmenuUnselectedIcon="@drawable/ic_drop_down_unselected_icon"
+            app:ddtextSelectedColor="@color/drop_down_selected"
+            app:ddtextUnselectedColor="@color/drop_down_unselected"
+            app:ddunderlineColor="@color/gray"/>
+    </LinearLayout>
+    <!-- <ListView
+         android:id="@+id/point_cloud_list"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@id/v_sep"
+         android:background="@color/menu_item_normal"
+         android:divider="@null"/>-->
+
+</RelativeLayout>

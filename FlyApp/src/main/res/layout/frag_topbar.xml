@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rel_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_centerVertical="true"
+        android:background="@drawable/title_color_gradient">
+
+        <ImageButton
+            android:id="@+id/iv_menu"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tvTopTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_menu"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/top_icon_margin"
+            android:textColor="#fff"
+            android:textSize="@dimen/top_bar_left_font" />
+
+        <com.ew.autofly.widgets.dji.DjiFlightStatusWidget
+            android:layout_width="150dp"
+            android:layout_height="26dp"
+           android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/imgBtnSimulateSetting"
+                android:layout_width="@dimen/top_bar_icon_height"
+                android:layout_height="@dimen/top_bar_icon_height"
+                android:background="#00000000"
+                android:padding="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_simulate_setting"
+                android:visibility="gone"/>
+
+            <com.ew.autofly.widgets.topbar.DeviceView
+                android:id="@+id/ivTopDevice"
+                android:layout_width="@dimen/top_bar_icon_height"
+                android:layout_height="@dimen/top_bar_icon_height"
+                android:src="@drawable/icon_wifi_disable"
+                android:layout_marginLeft="6dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"/>
+
+            <dji.ux.widget.GPSSignalWidget
+                android:id="@+id/imgBtnGPSSignal"
+                android:layout_width="@dimen/top_bar_icon_width2"
+                android:layout_height="@dimen/top_bar_icon_height"/>
+
+            <dji.ux.widget.VisionWidget
+                android:id="@+id/vw_vision_detection"
+                android:layout_width="@dimen/top_bar_icon_height"
+                android:layout_height="@dimen/top_bar_icon_height"
+                android:visibility="gone"/>
+
+            <dji.ux.widget.VideoSignalWidget
+                android:id="@+id/imgBtnFigure"
+                android:layout_width="@dimen/top_bar_icon_width1"
+                android:layout_height="@dimen/top_bar_icon_height"/>
+
+            <dji.ux.widget.RemoteControlSignalWidget
+                android:id="@+id/imgBtnSingle"
+                android:layout_width="@dimen/top_bar_icon_width1"
+                android:layout_height="@dimen/top_bar_icon_height"/>
+
+            <dji.ux.widget.BatteryWidget
+                android:id="@+id/imgBtnBattery"
+                android:layout_width="@dimen/top_bar_icon_width3"
+                android:layout_height="@dimen/top_bar_icon_height"/>
+
+            <TextView
+                android:id="@+id/tvBtnBattery"
+                android:gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:layout_width="@dimen/top_bar_icon_width3"
+                android:layout_height="@dimen/top_bar_icon_height"
+                android:drawableLeft="@drawable/ic_topbar_battery_nor"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="@dimen/top_bar_icon_width1"
+                android:layout_height="@dimen/top_bar_icon_height"
+                android:src="@drawable/ic_setting_more_nor"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

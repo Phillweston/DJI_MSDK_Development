@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/rl_title"
+        layout="@layout/layout_dialog_title_bar" />
+
+    <FrameLayout
+        android:id="@+id/fl_import_3d_model_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginTop="3dp"
+        android:background="@color/menu_item_normal"
+        android:orientation="vertical" />
+
+    <View
+        style="@style/default_dialog_space_line"
+        android:layout_above="@+id/ll_bottom" />
+
+    <RelativeLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/menu_item_normal">
+
+        <TextView
+            android:id="@+id/btn_earth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="@dimen/text_btn_padding"
+            android:text="三维地球"
+            android:textColor="@color/text_btn_text_color"
+            android:textSize="@dimen/text_btn_text_size" />
+
+        <TextView
+            android:id="@+id/btn_import"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="@dimen/text_btn_padding"
+            android:text="导入"
+            android:textColor="@color/text_btn_text_color"
+            android:textSize="@dimen/text_btn_text_size" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

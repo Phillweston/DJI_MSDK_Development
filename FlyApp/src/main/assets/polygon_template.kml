@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<name>导出面</name>
+<Style id="s_ylw-pushpin_hl"><LineStyle><color>ff2dff18</color></LineStyle><PolyStyle><color>ccff1c45</color></PolyStyle></Style><Style id="s_ylw-pushpin"><LineStyle><color>ff2dff18</color></LineStyle><PolyStyle><color>ccff1c45</color></PolyStyle></Style><Style id="sh_ylw-pushpin"><LineStyle><color>ff2dff18</color></LineStyle><PolyStyle><color>80ff1c45</color></PolyStyle></Style><Style id="sn_ylw-pushpin"><LineStyle><color>ff2dff18</color></LineStyle><PolyStyle><color>80ff1c45</color></PolyStyle></Style><Folder><name>临时位置</name><open>1</open>
+%1$s
+</Folder>
+</Document>
+</kml>

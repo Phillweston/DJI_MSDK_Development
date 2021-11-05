@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/map_btn_small_p"
+    android:layout_height="@dimen/map_btn_small_p"
+    android:background="@drawable/bg_common_btn_shape"
+    android:scaleType="centerCrop">
+
+</ImageButton>

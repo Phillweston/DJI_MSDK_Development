@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/design_black_transparent"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/dashboard_rtk"
+        android:layout_width="@dimen/dashboard_widget_width"
+        android:layout_height="@dimen/dashboard_widget_height"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="RTK: N/A"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dashboard_widget_text_size" />
+
+    <TextView
+        android:id="@+id/dashboard_pitch"
+        android:layout_width="@dimen/dashboard_widget_width"
+        android:layout_height="@dimen/dashboard_widget_height"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="云台: N/A"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dashboard_widget_text_size" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dashboard_widget_width"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp">
+
+        <TextView
+            android:id="@+id/tv_current_height"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:singleLine="true"
+            android:text="高度: N/A"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/play_back_realtime_text_size" />
+
+        <TextView
+            android:id="@+id/tv_current_distance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:singleLine="true"
+            android:text="距离: N/A"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/play_back_realtime_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dashboard_widget_width"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp">
+
+        <TextView
+            android:id="@+id/tv_current_vspeed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:singleLine="true"
+            android:text="垂直: N/A"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/play_back_realtime_text_size" />
+
+
+        <TextView
+            android:id="@+id/tv_current_hspeed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:singleLine="true"
+            android:text="水平: N/A"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/play_back_realtime_text_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_wire_follow_patrol_tree">单线激光-树障巡视</string>
+    <string name="txt_wire_follow_patrol_wire">单线激光-导线缺陷</string>
+</resources>

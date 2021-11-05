@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_dialog_list_item"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal">
+
+    <LinearLayout
+        android:id="@+id/rl_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_cloud_point_state"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:padding="@dimen/padding_normal"
+            android:src="@drawable/selector_cloud_point_preview" />
+
+        <TextView
+            android:id="@+id/tv_study_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/top_bar_font_micro" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/rl_preview"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_normal"
+            android:src="@drawable/selector_check_tower" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="塔号："
+            android:textColor="@color/white"
+            android:textSize="@dimen/top_bar_font_micro" />
+
+        <TextView
+            android:id="@+id/tv_tower_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:padding="2dp"
+            android:text="110kvd2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/top_bar_font_micro" />
+
+        <TextView
+            android:id="@+id/tv_tower_linename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/top_bar_font_micro" />
+
+    </LinearLayout>
+
+</RelativeLayout>

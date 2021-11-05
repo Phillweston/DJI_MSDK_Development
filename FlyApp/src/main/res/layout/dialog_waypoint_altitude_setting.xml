@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/menu_item_selected"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_loadtask_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="航点高度设置"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size_medium"/>
+
+        <ImageButton
+            android:id="@+id/ib_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_close_loadtask_selector"
+            android:padding="5dp"
+            android:scaleType="centerCrop"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_sep"
+        style="@style/line_hor_gray"
+        android:layout_below="@id/rl_title"
+        android:layout_marginBottom="3dip"
+        android:background="#00000000"/>
+
+    <RelativeLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#252932"
+        android:paddingBottom="13dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="13dp">
+
+        <TextView
+            android:id="@+id/txt_base_altitude"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="刷新"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/tv_ok"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="确认"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_sep2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/ll_bottom"
+        android:background="@color/default_space_line"/>
+
+    <GridView
+        android:id="@+id/gv_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/v_sep2"
+        android:layout_below="@id/v_sep"
+        android:layout_centerHorizontal="true"
+        android:background="#252932"
+        android:gravity="center"
+        android:listSelector="@color/trans"
+        android:numColumns="3"
+        android:paddingBottom="14dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="14dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/btn_camera_config_drawer"
+        android:layout_width="30pt"
+        android:layout_height="30pt"
+        android:src="@drawable/btn_right_drawer_selector"
+        android:rotation="180"/>
+
+    <LinearLayout
+        android:id="@+id/ll_camera_config"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <dji.ux.widget.config.CameraConfigISOAndEIWidget
+            android:layout_width="60pt"
+            android:layout_height="30pt" />
+
+        <dji.ux.widget.config.CameraConfigShutterWidget
+            android:layout_width="60pt"
+            android:layout_height="30pt" />
+
+        <dji.ux.widget.config.CameraConfigApertureWidget
+            android:layout_width="60pt"
+            android:layout_height="30pt" />
+
+        <dji.ux.widget.config.CameraConfigEVWidget
+            android:layout_width="60pt"
+            android:layout_height="30pt" />
+
+        <dji.ux.widget.config.CameraConfigWBWidget
+            android:layout_width="70pt"
+            android:layout_height="30pt" />
+
+        <dji.ux.widget.config.CameraConfigStorageWidget
+            android:layout_width="130pt"
+            android:layout_height="30pt" />
+
+    </LinearLayout>
+
+</LinearLayout>

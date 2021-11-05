@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/layout_dialog_title_bar" />
+
+    <LinearLayout
+        android:layout_below="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_towers"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="3dp"
+            android:background="@color/menu_item_normal"
+            android:divider="@color/default_space_line"
+            android:dividerHeight="1px"/>
+
+        <View
+            style="@style/default_dialog_space_line_1dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_load_task_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/menu_item_normal">
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tv_loadtask_load_radius"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/comfirm_job"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

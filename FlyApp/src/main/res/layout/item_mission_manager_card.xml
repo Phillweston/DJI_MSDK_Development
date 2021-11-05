@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="258dp"
+    android:layout_height="203dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mission_card_edge"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_mission_name"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:background="#4d6087"
+            android:gravity="center"
+            android:textColor="@color/default_blue"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="142dp">
+
+            <ImageView
+                android:id="@+id/iv_mission_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_mission_date"
+                android:layout_width="88dp"
+                android:layout_height="23dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="#3c4d6087"
+                android:gravity="center"
+                android:textColor="@color/default_white"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_mission_finish_state"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:textColor="@color/default_white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mission_function"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3c000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_mission_see"
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/icon_operation_see" />
+
+            <Button
+                android:id="@+id/btn_mission_delete"
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/icon_operation_delete" />
+
+            <Button
+                android:id="@+id/btn_mission_edit"
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/icon_operation_edit" />
+
+            <Button
+                android:id="@+id/btn_mission_bluetooth"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/icon_bluetooth_connect" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

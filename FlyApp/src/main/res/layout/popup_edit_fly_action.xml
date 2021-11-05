@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:divider="@drawable/line"
+    app:showDividers="middle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="4dp"
+            android:text="负载动作"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_action_start_take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/amount_indecrease_edit"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="拍照" />
+
+        <TextView
+            android:id="@+id/text_action_start_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/amount_indecrease_edit"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="开始录像" />
+
+        <TextView
+            android:id="@+id/text_action_stop_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/amount_indecrease_edit"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="停止录像" />
+
+        <TextView
+            android:id="@+id/text_action_gimbal_pitch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/amount_indecrease_edit"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="云台俯仰角" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="4dp"
+            android:text="飞行动作" />
+
+        <TextView
+            android:id="@+id/text_action_stay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/amount_indecrease_edit"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="悬停" />
+
+        <TextView
+            android:id="@+id/text_action_rotate_aircraft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/amount_indecrease_edit"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="飞行器偏航角" />
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

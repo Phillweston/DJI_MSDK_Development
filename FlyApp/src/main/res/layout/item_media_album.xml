@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_thumb"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_album_play"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/v_mask"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#88000000"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/cb_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

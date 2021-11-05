@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="default_background">#2d3340</color>
+    <color name="default_white">#ffffff</color>
+    <color name="default_blue">#25e0e7</color>
+    <color name="default_blue_light">#9af8fb</color>
+    <color name="default_green">#08ef8c</color>
+    <color name="default_red">#eb4040</color>
+    <color name="default_red_light">#f84242</color>
+    <color name="default_black">#1a1d23</color>
+    <color name="default_line">#445477</color>
+    <color name="default_space_line">#464A53</color>
+    <color name="default_title_background">#4d6087</color>
+    <color name="default_gray">#ababab</color>
+    <color name="default_item_background">#252932</color>
+    <color name="default_text_symbol_background">#7fffffff</color>
+
+    <color name="menu_item_selected">#1a1d23</color>
+    <color name="fpv_background">#242d34</color>
+    <color name="menu_item_normal">#252932</color>
+    <color name="loadtask_tv_normal">#D3D4D6</color>
+    <drawable name="menu_item_selected">#1a1d23</drawable>
+    <drawable name="transparent">#0000</drawable>
+    <drawable name="dlg_radio_bg">#fcfcfc</drawable>
+    <drawable name="list_item_selected">#333</drawable>
+    <drawable name="list_item_selected_blue">@color/blue</drawable>
+
+    <color name="play_back_title_text_color">@color/white</color>
+    <color name="common_btn_unable_text_color">#919192</color>
+
+    <color name="drop_down_selected">@color/blue</color>
+    <color name="drop_down_unselected">#111111</color>
+    <color name="drop_down_mask_color">@color/trans_2</color>
+    <color name="ars_100_btn_text_color">#333333</color>
+    <color name="ars_100_text_label">#999999</color>
+
+    <color name="setting_main_title_text_color">@color/white</color>
+    <color name="setting_item_selected_color">#5f25e0e7</color>
+
+    <color name="mission_graphic_line">@color/default_green</color>
+    <color name="mission_graphic_polygon">#1e00ff00</color>
+    <color name="mission_graphic_polygon_outline">#FFCCCCCC</color>
+    <color name="tower_line">#ffa500</color>
+    <color name="base_line">#ffa500</color>
+    <color name="fly_resume_line">@color/blue</color>
+    <color name="flight_number">@color/coral</color>
+
+    <color name="text_btn_text_color">@color/black</color>
+    <color name="radio_bg_black">#3c3c3c</color>
+    <color name="scrollbar_thumbver_black">#666666</color>
+    <color name="dialog_load_bg_hint">#444444</color>
+
+    <color name="description_text_color">#9c9c9c</color>
+</resources>

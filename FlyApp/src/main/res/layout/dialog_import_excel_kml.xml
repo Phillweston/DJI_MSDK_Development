@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/menu_item_selected"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_loadtask_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择文件"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size_medium" />
+
+        <ImageButton
+            android:id="@+id/tv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_close_loadtask_selector" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@id/tv_loadtask_title"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/tv_loadtask_title"
+            android:padding="1dp"
+            android:src="@drawable/icon_load_kml" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_sep"
+        style="@style/line_hor_gray"
+        android:layout_marginBottom="3dip"
+        android:background="@color/dialog_line" />
+
+    <RadioGroup
+        android:id="@+id/rg_mode"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_below="@+id/v_sep"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rb_kml"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_dlg_radio_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="KML"
+            android:textColor="@drawable/selector_dlg_radio_text" />
+
+        <RadioButton
+            android:id="@+id/rb_excel"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_dlg_radio_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="EXCEL"
+            android:textColor="@drawable/selector_dlg_radio_text" />
+
+    </RadioGroup>
+
+
+    <ListView
+        android:id="@+id/lv_excel_kml"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/menu_item_normal"
+        android:divider="@null" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/menu_item_normal"
+        android:gravity="bottom|right"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/btn_cloud_import"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/import_kml_dialog_text_button_padding"
+            android:text="云端kml"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btn_new"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/import_kml_dialog_text_button_padding"
+            android:text="新增"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/btn_append"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/import_kml_dialog_text_button_padding"
+            android:text="追加"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/btn_export"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/import_kml_dialog_text_button_padding"
+            android:text="导出"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/import_kml_dialog_text_button_padding"
+            android:text="删除"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/btn_import"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/import_kml_dialog_text_button_padding"
+            android:text="导入"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

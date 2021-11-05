@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/menu_item_selected"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_loadtask_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium" />
+
+        <ImageButton
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_close_loadtask_selector" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_sep"
+        style="@style/line_hor_gray"
+        android:layout_below="@id/rl_title"
+        android:layout_marginBottom="3dip"
+        android:background="#00000000" />
+
+    <RadioGroup
+        android:id="@+id/rg_mode"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/rb_auto_mode"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_dlg_radio_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="自动模式"
+            android:textColor="@drawable/selector_dlg_radio_text" />
+
+        <RadioButton
+            android:id="@+id/rb_manual_mode"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_dlg_radio_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="手动模式"
+            android:textColor="@drawable/selector_dlg_radio_text" />
+
+    </RadioGroup>
+
+    <View
+        style="@style/line_hor_gray"
+        android:background="@color/white_7" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#252932">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_other_params"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/bg_patrol_setting_divider_shape"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#252932"
+                    android:gravity="center_horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/rg_turn_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dip"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_turn_left_mode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:button="@drawable/selector_check1"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:paddingLeft="5dp"
+                            android:text="向左巡航"
+                            android:textColor="@drawable/selector_dlg_radio_text1"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_turn_right_mode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:button="@drawable/selector_check1"
+                            android:gravity="center"
+                            android:paddingLeft="5dp"
+                            android:text="向右巡航"
+                            android:textColor="@drawable/selector_dlg_radio_text1"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+                    <CheckBox
+                        android:id="@+id/cb_fly_no_tower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/selector_check1"
+                        android:paddingLeft="5dp"
+                        android:text="无杆塔飞行"
+                        android:textColor="@drawable/selector_dlg_radio_text1"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_auto_fly_attribute"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/bg_patrol_setting_divider_shape"
+                    android:orientation="vertical"
+                    android:showDividers="middle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#252932"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:text="相机视角："
+                            android:textColor="@color/white" />
+
+                        <RadioGroup
+                            android:id="@+id/rg_camera_visual_mode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dip"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_camera_visual_side"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:button="@drawable/selector_check1"
+                                android:checked="true"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:text="侧视"
+                                android:textColor="@drawable/selector_dlg_radio_text1"
+                                android:textSize="14sp" />
+
+                            <RadioButton
+                                android:id="@+id/rb_camera_visual_front"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:button="@drawable/selector_check1"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:text="前视"
+                                android:textColor="@drawable/selector_dlg_radio_text1"
+                                android:textSize="14sp" />
+
+                            <RadioButton
+                                android:id="@+id/rb_camera_visual_down"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:button="@drawable/selector_check1"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:text="俯视"
+                                android:textColor="@drawable/selector_dlg_radio_text1"
+                                android:textSize="14sp" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_speed"
+                        style="@style/dialog_patrol_setting_item">
+
+                        <ImageView
+                            android:id="@+id/iv_speed_advance"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="6dp"
+                            android:src="@drawable/selector_btn_setting_drop_down" />
+
+                        <TextView
+                            style="@style/dialog_patrol_setting_title_text"
+                            android:layout_marginStart="0dp"
+                            android:text="水平速度" />
+
+                        <com.ew.autofly.widgets.CustomBar
+                            android:id="@+id/sb_horizontal_speed"
+                            style="@style/dialog_patrol_setting_seekbar" />
+
+                        <TextView
+                            android:id="@+id/tv_horizontal_speed"
+                            style="@style/dialog_patrol_setting_label_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_vertical_speed"
+                        style="@style/dialog_patrol_setting_item"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/dialog_patrol_setting_title_text"
+                            android:text="前后速度" />
+
+                        <com.ew.autofly.widgets.CustomBar
+                            android:id="@+id/sb_vertical_speed"
+                            style="@style/dialog_patrol_setting_seekbar" />
+
+                        <TextView
+                            android:id="@+id/tv_vertical_speed"
+                            style="@style/dialog_patrol_setting_label_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_horizontal_speed"
+                        style="@style/dialog_patrol_setting_item"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/dialog_patrol_setting_title_text"
+                            android:text="竖直速度" />
+
+                        <com.ew.autofly.widgets.CustomBar
+                            android:id="@+id/sb_throttle_speed"
+                            style="@style/dialog_patrol_setting_seekbar" />
+
+                        <TextView
+                            android:id="@+id/tv_throttle_speed"
+                            style="@style/dialog_patrol_setting_label_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_distance_to_line"
+                        style="@style/dialog_patrol_setting_item">
+
+                        <TextView
+                            style="@style/dialog_patrol_setting_title_text"
+                            android:text="离线距离" />
+
+                        <com.ew.autofly.widgets.CustomBar
+                            android:id="@+id/sb_wire_distance"
+                            style="@style/dialog_patrol_setting_seekbar" />
+
+                        <TextView
+                            android:id="@+id/tv_wire_distance"
+                            style="@style/dialog_patrol_setting_label_text" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_tower_level"
+                    style="@style/dialog_patrol_setting_item">
+
+                    <TextView
+                        style="@style/dialog_patrol_setting_title_text"
+                        android:text="电压等级" />
+
+                    <com.ew.autofly.widgets.CustomBar
+                        android:id="@+id/sb_tower_level"
+                        style="@style/dialog_patrol_setting_seekbar" />
+
+                    <TextView
+                        android:id="@+id/tv_tower_level"
+                        style="@style/dialog_patrol_setting_label_text" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_tree_safe_distance"
+                    style="@style/dialog_patrol_setting_item">
+
+                    <TextView
+                        style="@style/dialog_patrol_setting_title_text"
+                        android:text="树障距离" />
+
+                    <com.ew.autofly.widgets.CustomBar
+                        android:id="@+id/sb_tree_safe_distance"
+                        style="@style/dialog_patrol_setting_seekbar" />
+
+                    <TextView
+                        android:id="@+id/tv_tree_safe_distance"
+                        style="@style/dialog_patrol_setting_label_text" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        style="@style/line_hor_gray"
+        android:background="@color/white_7" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#252932"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_other_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="缺陷等级设置"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/tv_ok"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:padding="2dp"
+            android:text="确定"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</LinearLayout>

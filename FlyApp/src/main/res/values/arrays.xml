@@ -1,0 +1,521 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <!-- Do not change the names here, instead extract the strings -->
+    <string-array name="RCQuickModes">
+        <item name="Stabilize">Stabilize</item>
+        <item name="Acro">Acro</item>
+        <item name="Alt_Hold">Alt_Hold</item>
+        <item name="Auto">Auto</item>
+        <item name="Guided">Guided</item>
+        <item name="Loiter">Loiter</item>
+        <item name="Rtl">RTL</item>
+        <item name="Circle">Circle</item>
+        <item name="Position">Position</item>
+        <item name="Land">Land</item>
+        <item name="Of_Loiter">Of_Loiter</item>
+        <item name="Drift">Drift</item>
+        <item name="Sport">Sport</item>
+    </string-array>
+
+
+    <string-array name="TelemetryConnectionTypes">
+        <item name="USB">USB</item>
+        <item name="TCP">TCP</item>
+        <item name="UDP">UDP</item>
+        <item name="BLUETOOTH">BLUETOOTH</item>
+    </string-array>
+
+    <!--
+    The values below should match the connection type constants in
+    com.o3dr.services.android.lib.drone.connection.ConnectionType
+    -->
+    <string-array name="TelemetryConnectionTypesValues">
+        <item name="USB">0</item>
+        <item name="TCP">2</item>
+        <item name="UDP">1</item>
+        <item name="BLUETOOTH">3</item>
+    </string-array>
+
+    <string-array name="TileProviderValues">
+        <item>google</item>
+        <item>mapbox</item>
+        <item>arcgis</item>
+    </string-array>
+
+    <string-array name="cameraTypes">
+        <item>等时间隔拍照</item>
+        <item>等距间隔拍照</item>
+    </string-array>
+
+    <string-array name="maps">
+        <item>高德</item>
+        <!--        <item>google</item>-->
+    </string-array>
+
+    <string-array name="fail_safe">
+        <item>悬停</item>
+        <item>下降</item>
+        <item>返航</item>
+    </string-array>
+
+    <string-array name="flyFinishTypes">
+        <item>悬停</item>
+        <item>自动返航</item>
+        <item>原地降落</item>
+        <item>返回航线起始点</item>
+    </string-array>
+
+    <string-array name="yawType">
+        <item>沿航线方向</item>
+        <item>手动控制</item>
+        <item>依照每个航点设置</item>
+    </string-array>
+
+    <string-array name="pitchType">
+        <item>手动控制</item>
+        <item>依照每个航点设置</item>
+    </string-array>
+
+    <string-array name="MapTypeValues">
+        <item>satellite</item>
+        <item>hybrid</item>
+        <item>normal</item>
+        <item>terrain</item>
+    </string-array>
+
+    <string-array name="TelemetryBaudTypes">
+        <item name="38400">38400</item>
+        <item name="57600">57600</item>
+        <item name="115200">115200</item>
+    </string-array>
+    <string-array name="RCModes">
+        <item name="MODE1">(Mode1) Throttle Right</item>
+        <item name="MODE2">(Mode2) Throttle Left</item>
+    </string-array>
+    <string-array name="RCModeValues">
+        <item name="MODE1">MODE1</item>
+        <item name="MODE2">MODE2</item>
+    </string-array>
+    <string-array name="WPData">
+        <item name="Nos">#</item>
+        <item name="Alt">Altitude</item>
+        <item name="Lat">Latitude</item>
+        <item name="Lon">Longitude</item>
+        <item name="Param1">P1</item>
+        <item name="Param2">P2</item>
+        <item name="Param3">P3</item>
+        <item name="Param4">P4</item>
+    </string-array>
+    <string-array name="CoordSource">
+        <item>Waypoint</item>
+        <item>Ground station</item>
+        <item>Manual entry</item>
+    </string-array>
+    <string-array name="ExampleWaypointType">
+        <item>Waypoint Type</item>
+    </string-array>
+    <string-array name="RC_Tuning">
+        <item>Auto-tune</item>
+        <item>Roll / Pitch</item>
+        <item>Altitude Hold</item>
+        <item>Loiter</item>
+        <item>Navigation</item>
+    </string-array>
+    <string-array name="RC_Features">
+        <item>Do Nothing</item>
+        <item>Flip</item>
+        <item>Simple Mode</item>
+        <item>RTL</item>
+        <item>Save Trim</item>
+        <item>Save WP</item>
+        <item>Multi Mode</item>
+        <item>Camera Trigger</item>
+        <item>Sonar</item>
+        <item>Fence</item>
+        <item>ResetToArmedYaw</item>
+        <item>Super Simple Mode</item>
+        <item>Acro Trainer</item>
+        <item>Auto</item>
+        <item>AutoTune</item>
+        <item>Land</item>
+        <item>EPM</item>
+    </string-array>
+    <string-array name="FligthMode_CopterV3_1">
+        <item>0;Stabilize</item>
+        <item>1;Acro</item>
+        <item>2;AltHold</item>
+        <item>3;Auto</item>
+        <item>4;Guided</item>
+        <item>5;Loiter</item>
+        <item>6;RTL</item>
+        <item>7;Circle</item>
+        <item>8;Position</item>
+        <item>9;Land</item>
+        <item>10;OF_Loiter</item>
+        <item>11;Drift</item>
+        <item>13;Sport</item>
+    </string-array>
+    <string-array name="FligthMode_PWM_Range">
+        <item>&lt; 1230</item>
+        <item>1230 – 1360</item>
+        <item>1360 – 1490</item>
+        <item>1490 – 1620</item>
+        <item>1620 – 1749</item>
+        <item>&gt; 1750</item>
+    </string-array>
+    <string-array name="CH6_Options">
+        <item>0;None</item>
+        <item>1;Stab Roll/Pitch kP</item>
+        <item>4;Rate Roll/Pitch kP</item>
+        <item>5;Rate Roll/Pitch kI</item>
+        <item>21;Rate Roll/Pitch kD</item>
+        <item>3;Stab Yaw kP</item>
+        <item>6;Rate Yaw kP</item>
+        <item>26;Rate Yaw kD</item>
+        <item>14;Altitude Hold kP</item>
+        <item>7;Throttle Rate kP</item>
+        <item>37;Throttle Rate kD</item>
+        <item>34;Throttle Accel kP</item>
+        <item>35;Throttle Accel kI</item>
+        <item>36;Throttle Accel kD</item>
+        <item>42;Loiter Speed</item>
+        <item>12;Loiter Pos kP</item>
+        <item>22;Loiter Rate kP</item>
+        <item>28;Loiter Rate kI</item>
+        <item>23;Loiter Rate kD</item>
+        <item>10;WP Speed</item>
+        <item>25;Acro RollPitch kP</item>
+        <item>40;Acro Yaw kP</item>
+        <item>9;Relay On/Off</item>
+        <item>13;Heli Ext Gyro</item>
+        <item>17;OF Loiter kP</item>
+        <item>18;OF Loiter kI</item>
+        <item>19;OF Loiter kD</item>
+        <item>30;AHRS Yaw kP</item>
+        <item>31;AHRS kP</item>
+        <item>32;INAV_TC</item>
+        <item>38;Declination</item>
+        <item>39;Circle Rate</item>
+        <item>41;Sonar Gain</item>
+    </string-array>
+    <string-array name="CH_Options">
+        <item>0;Do Nothing</item>
+        <item>2;Flip</item>
+        <item>3;Simple Mode</item>
+        <item>4;RTL</item>
+        <item>5;Save Trim</item>
+        <item>7;Save WP</item>
+        <item>8;Multi Mode</item>
+        <item>9;Camera Trigger</item>
+        <item>10;Sonar</item>
+        <item>11;Fence</item>
+        <item>12;ResetToArmedYaw</item>
+        <item>13;Super Simple Mode</item>
+        <item>14;Acro Trainer</item>
+        <item>16;Auto</item>
+        <item>17;AutoTune</item>
+        <item>18;Land</item>
+        <item>19;EPM</item>
+    </string-array>
+    <string-array name="Servo_Functions">
+        <item>0;Disabled</item>
+        <item>1;RCPassThru</item>
+        <item>2;Flap</item>
+        <item>3;Flap_auto</item>
+        <item>4;Aileron</item>
+        <item>5;flaperon</item>
+        <item>6;mount_pan</item>
+        <item>7;mount_tilt</item>
+        <item>8;mount_roll</item>
+        <item>9;mount_open</item>
+        <item>10;camera_trigger</item>
+        <item>11;release</item>
+        <item>12;mount2_pan</item>
+        <item>13;mount2_tilt</item>
+        <item>14;mount2_roll</item>
+        <item>15;mount2_open</item>
+        <item>16;DifferentialSpoiler1</item>
+        <item>17;DifferentialSpoiler2</item>
+        <item>18;AileronWithInput</item>
+        <item>19;Elevator</item>
+        <item>20;ElevatorWithInput</item>
+        <item>21;Rudder</item>
+    </string-array>
+
+    <string-array name="tts_periodic_period_values">
+        <item>0</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+    </string-array>
+    <!-- This string is just used to help in the layout editor -->
+    <string-array name="ExampleCameraArray">
+        <item>No cameras Available</item>
+    </string-array>
+
+    <string-array name="unit_system_values">
+        <item name="auto">0</item>
+        <item name="metric">1</item>
+        <item name="imperial">2</item>
+    </string-array>
+
+
+    <string-array name="spniner_ishover">
+        <item>否</item>
+        <item>是</item>
+    </string-array>
+
+    <string-array name="flyDirection">
+        <item>自动</item>
+    </string-array>
+    <string-array name="finishaction">
+        <item>悬停</item>
+        <item>自动返航</item>
+        <item>原地降落</item>
+        <item>返回航线起始点</item>
+    </string-array>
+    <string-array name="aircraft">
+        <item>非 Matrice 300</item>
+        <item>Matrice 300</item>
+    </string-array>
+    <string-array name="flyTaskType">
+        <item>航点飞行</item>
+        <item>航线飞行</item>
+        <item>环绕飞行</item>
+    </string-array>
+    <string name="app_new_name">AUTOFLY</string>
+    <string name="sdk_registration_fail">sdk_registration_fail
+    </string>
+    <string name="sdk_registration_success">sdk_registration_success
+    </string>
+    <string name="connection_loose">connection_loose</string>
+
+    <string-array name="cameraori">
+        <item>平行与主航线</item>
+        <item>垂直与主航线</item>
+    </string-array>
+    <string-array name="photographtype">
+        <item>等距离拍照</item>
+        <item>等时间拍照</item>
+    </string-array>
+    <string-array name="flytype">
+        <item>扫描模式</item>
+        <item>区内模式</item>
+    </string-array>
+    <string-array name="encircletype">
+        <item>逆时针环绕</item>
+        <item>顺时针环绕</item>
+    </string-array>
+    <string-array name="spinner_aircraft_mapping">
+        <item>日本手</item>
+        <item>美国手</item>
+    </string-array>
+    <string-array name="spinner_camera_orientation">
+        <item>开</item>
+        <item>关</item>
+    </string-array>
+
+    <string-array name="camera_focal">
+        <item>4</item>
+        <item>8</item>
+        <item>15</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>
+        <item>32</item>
+        <item>34</item>
+        <item>36</item>
+    </string-array>
+    <string-array name="camera_size">
+        <item>4000*3000</item>
+        <item>4096*3072</item>
+        <item>4096*2304</item>
+        <item>4608*2592</item>
+        <item>4800*3600</item>
+        <item>5420*2880</item>
+        <item>5120*3840</item>
+        <item>6000*4000</item>
+        <item>6400*4800</item>
+        <item>7952*5304</item>
+        <item>7360*4912</item>
+        <item>8688*5792</item>
+        <item>640*480</item>
+        <item>720*405</item>
+        <item>800*600</item>
+        <item>960*540</item>
+        <item>960*720</item>
+        <item>1024*576</item>
+        <item>1024*768</item>
+        <item>1280*720</item>
+        <item>1280*960</item>
+        <item>1152*864</item>
+        <item>1366*768</item>
+        <item>1400*1050</item>
+        <item>1600*900</item>
+        <item>1600*1200</item>
+        <item>1920*1080</item>
+        <item>1792*1344</item>
+        <item>2048*1152</item>
+        <item>2048*1536</item>
+        <item>2304*1782</item>
+        <item>2560*1440</item>
+        <item>2592*1944</item>
+        <item>2720*1530</item>
+        <item>2816*2112</item>
+        <item>3072*1728</item>
+        <item>3072*2304</item>
+        <item>3200*2400</item>
+        <item>3264*2448</item>
+        <item>3456*2592</item>
+        <item>3600*2700</item>
+        <item>3672*2754</item>
+        <item>3840*2880</item>
+        <item>3840*2160</item>
+
+    </string-array>
+    <string-array name="camera_iso">
+        <item>100</item>
+        <item>200</item>
+        <item>400</item>
+        <item>800</item>
+        <item>1600</item>
+        <item>3200</item>
+        <item>6400</item>
+        <item>12800</item>
+        <item>25600</item>
+    </string-array>
+    <string-array name="camera_av">
+        <item>f/1.6</item>
+        <item>f/1.8</item>
+        <item>f/2</item>
+        <item>f/2.2</item>
+        <item>f/2.4</item>
+        <item>f/2.8</item>
+        <item>f/3.2</item>
+        <item>f/3.4</item>
+        <item>f/3.4</item>
+        <item>f/4</item>
+        <item>f/4.5</item>
+        <item>f/4.8</item>
+        <item>f/5</item>
+        <item>f/6.3</item>
+        <item>f/8</item>
+        <item>f/11</item>
+        <item>f/16</item>
+        <item>f/22</item>
+    </string-array>
+    <string-array name="camera_ev">
+        <item>-5.0ev</item>
+        <item>-4.0ev</item>
+        <item>-3.0ev</item>
+        <item>-2.0ev</item>
+        <item>-1.0ev</item>
+        <item>0.0ev</item>
+        <item>1.0ev</item>
+        <item>2.0ev</item>
+        <item>3.0ev</item>
+        <item>4.0ev</item>
+        <item>5.0ev</item>
+    </string-array>
+    <string-array name="photoswith">
+        <item>0°</item>
+        <item>90°</item>
+    </string-array>
+
+    <string-array name="camera_shutter">
+        <item>8000</item>
+        <item>6400</item>
+        <item>5000</item>
+        <item>4000</item>
+        <item>3200</item>
+        <item>2500</item>
+        <item>2000</item>
+        <item>1600</item>
+        <item>1250</item>
+        <item>1000</item>
+        <item>800</item>
+        <item>640</item>
+        <item>500</item>
+        <item>400</item>
+        <item>320</item>
+        <item>240</item>
+        <item>200</item>
+        <item>160</item>
+        <item>120</item>
+        <item>100</item>
+        <item>80</item>
+        <item>60</item>
+        <item>50</item>
+        <item>40</item>
+        <item>30</item>
+        <item>25</item>
+        <item>20</item>
+        <item>15</item>
+        <item>12.5</item>
+        <item>10</item>
+        <item>8</item>
+        <item>6.25</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2.5</item>
+        <item>2</item>
+        <item>1.67</item>
+        <item>1.25</item>
+        <item>1\"</item>
+        <item>1.3\"</item>
+        <item>1.6\"</item>
+        <item>2\"</item>
+        <item>2.5\"</item>
+        <item>3\"</item>
+        <item>3.2\"</item>
+        <item>4\"</item>
+        <item>5\"</item>
+        <item>6\"</item>
+        <item>7\"</item>
+        <item>8\"</item>
+    </string-array>
+
+    <string-array name="image_type">
+        <item>JPEG</item>
+        <item>RAW</item>
+        <item>RAW_JPEG</item>
+        <item>TIFF</item>
+        <item>TIFF_LINEAR</item>
+        <item>TIFF_LINEAR_LOW</item>
+        <item>TIFF_LINEAR_HIGH</item>
+        <item>RADIOMETRIC_JPEG</item>
+    </string-array>
+    <!--配置主菜单-->
+    <string-array name="channel_main_menu">
+        <item>@string/channel_menu_model_change</item>
+        <item>@string/channel_menu_mission_manage</item>
+        <item>@string/channel_menu_fly_record</item>
+    </string-array>
+
+
+    <!--配置二级菜单编码（采集模式）-->
+    <string-array name="channel_server_optional_mode_code">
+        <item>SD</item><!--手动-->
+        <item>XZ</item><!--线状-->
+    </string-array>
+
+    <!--配置二级菜单标题（采集模式）-->
+    <string-array name="channel_main_mode_menu">
+        <item>@string/channel_mode_manual_collect</item><!--手动-->
+        <item>@string/channel_mode_line_patrol</item><!--线状-->
+    </string-array>
+
+    <integer-array name="channel_main_mode_menu_icon">
+        <item>@drawable/selector_title_fly_manual</item><!--手动-->
+        <item>@drawable/selector_title_fly_line</item><!--线状-->
+    </integer-array>
+</resources>

@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 自定义loading dialog -->
+    <style name="BaseProgressDialogTheme" parent="android:style/Theme.Holo.DialogWhenLarge">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/trans</item>
+        <item name="android:windowIsFloating">true</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Base_ActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/base_action_button_height</item>
+        <item name="android:minWidth">@dimen/base_action_button_min_width</item>
+        <item name="android:paddingLeft">@dimen/base_action_button_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/base_action_button_padding_horizontal</item>
+        <item name="android:background">@drawable/base_selector_dialog_material_button</item>
+        <item name="android:textSize">@dimen/base_action_button_text_size</item>
+    </style>
+
+    <style name="MaterialDialogStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <!--背景色-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否悬浮-->
+        <item name="android:windowIsFloating">true</item>
+        <!--背景是否昏暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/MaterialDialogAnimation</item>
+    </style>
+
+    <style name="MaterialDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/base_dialog_material_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/base_dialog_material_out_anim</item>
+    </style>
+
+</resources>

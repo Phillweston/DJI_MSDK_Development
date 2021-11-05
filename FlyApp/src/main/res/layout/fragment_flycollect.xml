@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/id_fragment_topbar"
+        android:name="com.ew.autofly.fragments.TopFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/line_hor"
+        android:layout_height="0dp"
+        android:layout_below="@id/id_fragment_topbar" />
+
+    <FrameLayout
+        android:id="@+id/id_fragment_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line" />
+
+    <TextView
+        android:id="@+id/tvMonitorInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/id_fragment_topbar"
+        android:background="@drawable/tv_moitorinfo_right_radius"
+        android:alpha="0.7"
+        android:lineSpacingExtra="4dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/top_bar_font_small"
+        android:visibility="gone" />
+
+</RelativeLayout>

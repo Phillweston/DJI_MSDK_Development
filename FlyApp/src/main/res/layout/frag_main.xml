@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/id_fragment_topbar"
+        android:name="com.ew.autofly.struct.controller.BaseTopFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:id="@+id/id_fragment_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_fragment_topbar"/>
+
+    <dji.ux.panel.PreFlightCheckListPanel
+        android:id="@+id/perflight_check"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/id_fragment_topbar"
+        android:visibility="gone"/>
+
+</RelativeLayout>

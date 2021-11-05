@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/dark_gray"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <dji.ux.widget.AutoExposureLockWidget
+            android:layout_width="30pt"
+            android:layout_height="30pt" />
+
+        <dji.ux.widget.FocusExposureSwitchWidget
+            android:layout_width="30pt"
+            android:layout_height="30pt" />
+
+        <dji.ux.widget.FocusModeWidget
+            android:layout_width="30pt"
+            android:layout_height="30pt" />
+
+      <com.ew.autofly.widgets.dji.DjiCameraConfigWidget
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <dji.ux.widget.HistogramWidget
+        android:layout_below="@id/camera"
+        android:id="@+id/histogram"
+        android:layout_width="150pt"
+        android:layout_height="75pt"
+        tools:ignore="RtlHardcoded"/>
+
+    <dji.ux.widget.RemainingFlightTimeWidget
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent" />
+
+    <com.ew.autofly.widgets.component.camera.CameraZoomWidget
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="70dp"/>
+
+    <com.ew.autofly.widgets.ai.AICameraControlsPanel
+        android:id="@+id/camera_capture_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        tools:ignore="RtlHardcoded"/>
+
+  <!--  <include layout="@layout/layout_ai_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" />-->
+
+    <!--<dji.ux.widget.controls.CameraControlsWidget
+        android:id="@+id/CameraCapturePanel"
+        android:layout_width="50pt"
+        android:layout_height="213pt"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        tools:ignore="RtlHardcoded" />-->
+
+    <!--<dji.ux.panel.CameraSettingExposurePanel
+        android:layout_width="180pt"
+        android:layout_height="263pt"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/CameraCapturePanel"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:ignore="RtlHardcoded" />
+
+    <dji.ux.panel.CameraSettingAdvancedPanel
+        android:layout_width="180pt"
+        android:layout_height="263pt"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/CameraCapturePanel"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:ignore="RtlHardcoded" />-->
+
+</RelativeLayout>

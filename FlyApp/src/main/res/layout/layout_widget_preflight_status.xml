@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageview_preflight_color_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/disconnected_status"
+    />
+    <dji.ux.base.MarqueeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:id="@+id/textview_preflight_status"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:ellipsize="marquee"
+        android:textSize="@dimen/top_bar_center_font"
+    />
+
+</RelativeLayout>

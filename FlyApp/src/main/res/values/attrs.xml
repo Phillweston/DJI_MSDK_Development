@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="lineWidth" format="dimension" />
+    <attr name="speed" format="integer" />
+
+    <declare-styleable name="ConnectLineView">
+        <attr name="lineWidth" />
+        <attr name="speed" />
+    </declare-styleable>
+
+
+    <string-array name="tower_column">
+        <item>@string/txt_grid_line_name</item>
+        <item>@string/txt_voltage_grade</item>
+        <item>@string/txt_manage_group</item>
+        <item>@string/txt_tower_no</item>
+        <item>@string/txt_longitude</item>
+        <item>@string/txt_latitude</item>
+        <item>@string/txt_tower_altitude</item>
+    </string-array>
+
+    <string-array name="tower_component">
+        <item>A相</item>
+        <item>B相</item>
+        <item>C相</item>
+        <item>大号侧线行</item>
+        <item>杆号牌</item>
+        <item>杆塔定位</item>
+        <item>基础</item>
+        <item>全塔图</item>
+        <item>小号侧线行</item>
+        <item>右地线</item>
+        <item>左地线</item>
+    </string-array>
+
+    <!--直线塔部件-->
+    <string-array name="tower_component_straight">
+        <item>全塔</item>
+        <item>塔头相序</item>
+        <item>基础</item>
+        <item>杆号牌</item>
+        <item>左回路-下相</item>
+        <item>左回路-中相</item>
+        <item>左回路-上相</item>
+        <item>左地线</item>
+        <item>杆塔定位</item>
+        <item>大号线行</item>
+        <item>小号线行</item>
+        <item>违章建筑物</item>
+        <item>机械施工</item>
+        <item>右地线</item>
+        <item>右回路-上相</item>
+        <item>右回路-中相</item>
+        <item>右回路-下相</item>
+        <item>树障</item>
+        <item>ADSS挂点</item>
+        <item>光纤接头盒</item>
+        <item>左回路-下相避雷针</item>
+        <item>左回路-中相避雷针</item>
+        <item>左回路-上相避雷针</item>
+        <item>右回路-上相避雷针</item>
+        <item>右回路-中相避雷针</item>
+        <item>右回路-下相避雷针</item>
+    </string-array>
+
+    <!--耐张塔部件-->
+    <string-array name="tower_component_strain">
+        <item>全塔</item>
+        <item>塔头相序</item>
+        <item>基础</item>
+        <item>杆号牌</item>
+        <item>左回路-下相小号侧</item>
+        <item>左回路-中相小号侧</item>
+        <item>左回路-上相小号侧</item>
+        <item>左回路-上相大号侧</item>
+        <item>左回路-中相大号侧</item>
+        <item>左回路-下相大号侧</item>
+        <item>左回路-下相跳线</item>
+        <item>左回路-中相跳线</item>
+        <item>左回路-上相跳线</item>
+        <item>左地线大号侧</item>
+        <item>左地线小号侧</item>
+        <item>杆塔定位</item>
+        <item>大号线行</item>
+        <item>小号线行</item>
+        <item>违章建筑物</item>
+        <item>机械施工</item>
+        <item>右地线大号侧</item>
+        <item>右地线小号侧</item>
+        <item>右回路-上相小号侧</item>
+        <item>右回路-中相小号侧</item>
+        <item>右回路-下相小号侧</item>
+        <item>右回路-下相大号侧</item>
+        <item>右回路-中相大号侧</item>
+        <item>右回路-上相大号侧</item>
+        <item>右回路-上相跳线</item>
+        <item>右回路-中相跳线</item>
+        <item>右回路-下相跳线</item>
+        <item>树障</item>
+        <item>ADSS挂点</item>
+        <item>光纤接头盒</item>
+        <item>左回路-下相避雷针</item>
+        <item>左回路-中相避雷针</item>
+        <item>左回路-上相避雷针</item>
+        <item>右回路-上相避雷针</item>
+        <item>右回路-中相避雷针</item>
+        <item>右回路-下相避雷针</item>
+    </string-array>
+
+    <string-array name="video_source">
+        <item>自动</item>
+        <item>主镜头</item>
+        <item>副镜头</item>
+        <item>FPV镜头</item>
+    </string-array>
+
+    <string-array name="lightbridge_frequency_band">
+        <item>2.4G</item>
+        <item>5.8G</item>
+    </string-array>
+
+    <string-array name="ocuSync_frequency_band">
+        <item>双频</item>
+        <item>2.4G</item>
+        <item>5.8G</item>
+    </string-array>
+
+    <string-array name="display_dual">
+        <item>可见光</item>
+        <item>红外</item>
+        <item>融合</item>
+    </string-array>
+
+    <string-array name="display_M2EA">
+        <item>可见光</item>
+        <item>红外</item>
+    </string-array>
+
+    <string-array name="display_xt2_dual">
+        <item>画中画</item>
+        <item>可见光</item>
+        <item>红外</item>
+        <item>融合</item>
+    </string-array>
+
+    <string-array name="map_source">
+        <item>谷歌地图</item>
+        <item>高德地图</item>
+        <item>OpenCycle</item>
+    </string-array>
+
+    <string-array name="map_region">
+        <item>中国大陆</item>
+        <item>香港/澳门</item>
+        <item>其他地区</item>
+    </string-array>
+
+    <string-array name="gimbal_mode">
+        <item>自由模式</item>
+        <item>FPV模式</item>
+        <item>航向跟随</item>
+    </string-array>
+
+    <string-array name="remote_rocker_mode">
+        <item>日本手</item>
+        <item>美国手</item>
+        <item>中国手</item>
+    </string-array>
+
+    <string-array name="rtk_service_type">
+        <item>内置网络RTK</item>
+        <item>自定义网络RTK</item>
+        <item>无</item>
+    </string-array>
+
+    <string-array name="rtk_coordinate_system">
+        <item>WGS84</item>
+        <item>C2000</item>
+    </string-array>
+
+    <declare-styleable name="CrystalRangeSeekbar">
+        <attr name="corner_radius" format="float" />
+        <attr name="min_value" format="float" />
+        <attr name="max_value" format="float" />
+        <attr name="min_start_value" format="float" />
+        <attr name="max_start_value" format="float" />
+        <attr name="steps" format="float" />
+        <attr name="gap" format="float" />
+        <attr name="fix_gap" format="float" />
+        <attr name="bar_color" format="color" />
+        <attr name="bar_highlight_color" format="color" />
+        <attr name="left_thumb_color" format="color" />
+        <attr name="right_thumb_color" format="color" />
+        <attr name="left_thumb_color_pressed" format="color" />
+        <attr name="right_thumb_color_pressed" format="color" />
+        <attr name="left_thumb_image" format="dimension" />
+        <attr name="right_thumb_image" format="dimension" />
+        <attr name="left_thumb_image_pressed" format="dimension" />
+        <attr name="right_thumb_image_pressed" format="dimension" />
+        <attr name="data_type" format="integer" />
+        <attr name="thumb_diameter" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="off_icon" format="reference" />
+        <attr name="on_icon" format="reference" />
+        <attr name="off_text" format="string" />
+        <attr name="on_text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="auto_switch_enable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomFlySeekBarLayout">
+        <!--The maximum-->
+        <attr name="rsb_max" format="float" />
+        <!--The minimum-->
+        <attr name="rsb_min" format="float" />
+        <attr name="rsb_default" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberPicker">
+        <attr name="min" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="value" format="integer" />
+        <attr name="unit" format="float" />
+        <attr name="symbol" format="string" />
+        <attr name="custom_layout" format="reference" />
+        <attr name="focusable" format="boolean" />
+        <attr name="delay" format="boolean" />
+        <attr name="inputType" format="string" />
+    </declare-styleable>
+
+    <attr name="popupTextAlignment" format="enum">
+        <enum name="start" value="0" />
+        <enum name="end" value="1" />
+        <enum name="center" value="2" />
+    </attr>
+
+    <declare-styleable name="NiceSpinner">
+        <attr name="arrowTint" format="color" />
+        <attr name="hideArrow" format="boolean" />
+        <attr name="arrowDrawable" format="reference|color" />
+        <attr name="dropDownListPaddingBottom" format="dimension" />
+        <attr name="backgroundSelector" format="integer" />
+        <attr name="textTint" format="color" />
+        <attr name="popupTextAlignment" />
+        <attr name="entries" format="reference" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="CustomSlidingDrawer">
+        <!-- Identifier for the child that represents the drawer's handle. -->
+        <attr name="handleLayout" format="reference" />
+        <!-- Identifier for the child that represents the drawer's content. -->
+        <attr name="contentLayout" format="reference" />
+        <!-- Orientation of the SlidingDrawer. -->
+        <attr name="orientation" format="integer">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <!-- Extra offset for the handle at the bottom of the SlidingDrawer. -->
+        <attr name="bottomOffset" format="dimension"  />
+        <!-- Extra offset for the handle at the top of the SlidingDrawer. -->
+        <attr name="topOffset" format="dimension"  />
+        <!-- Indicates whether the drawer can be opened/closed by a single tap
+             on the handle.  (If false, the user must drag or fling, or click
+             using the trackball, to open/close the drawer.)  Default is true. -->
+        <attr name="allowSingleTap" format="boolean" />
+        <!-- Indicates whether the drawer should be opened/closed with an animation
+             when the user clicks the handle. Default is true. -->
+        <attr name="animateOnClick" format="boolean" />
+    </declare-styleable>
+
+</resources>

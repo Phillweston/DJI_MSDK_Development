@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/ars_100_dialog_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/menu_item_selected"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="激光雷达"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size_medium"/>
+
+        <ImageButton
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_close_loadtask_selector"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line_hor_gray"
+        android:layout_marginBottom="3dip"
+        android:background="#00000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:background="@color/menu_item_normal"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_ars_status"
+                android:layout_width="@dimen/tv_ars_status_width"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="状态："
+                    android:textColor="@color/ars_100_text_label"
+                    android:textSize="@dimen/ars_100_btn_text_size"/>
+
+                <TextView
+                    android:id="@+id/tv_ars_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未连接"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ars_100_btn_text_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_ars_disk_remain"
+                android:layout_width="@dimen/tv_ars_status_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/ll_ars_status"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可用磁盘空间："
+                    android:textColor="@color/ars_100_text_label"
+                    android:textSize="@dimen/ars_100_btn_text_size"/>
+
+                <TextView
+                    android:id="@+id/tv_ars_disk_remain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ars_100_btn_text_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_ars_pos_time"
+                android:layout_width="@dimen/tv_ars_status_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_ars_status"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POS采集时间："
+                    android:textColor="@color/ars_100_text_label"
+                    android:textSize="@dimen/ars_100_btn_text_size"/>
+
+                <TextView
+                    android:id="@+id/tv_ars_pos_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00:00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ars_100_btn_text_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_ars_pointcloud_time"
+                android:layout_width="@dimen/tv_ars_status_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_ars_status"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/ll_ars_pos_time"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点云采集时间："
+                    android:textColor="@color/ars_100_text_label"
+                    android:textSize="@dimen/ars_100_btn_text_size"/>
+
+                <TextView
+                    android:id="@+id/tv_ars_pointcloud_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00:00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ars_100_btn_text_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_ars_imu_status"
+                android:layout_width="@dimen/tv_ars_status_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_ars_pos_time"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IMU："
+                    android:textColor="@color/ars_100_text_label"
+                    android:textSize="@dimen/ars_100_btn_text_size"/>
+
+                <TextView
+                    android:id="@+id/tv_ars_imu_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ars_100_btn_text_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_ars_gnss_status"
+                android:layout_width="@dimen/tv_ars_status_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_ars_pos_time"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/ll_ars_imu_status"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GNSS："
+                    android:textColor="@color/ars_100_text_label"
+                    android:textSize="@dimen/ars_100_btn_text_size"/>
+
+                <TextView
+                    android:id="@+id/tv_ars_gnss_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="N/A"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ars_100_btn_text_size"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1a1d23"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/menu_item_normal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/ll_ars_cmd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_ars_connect"
+                android:layout_width="@dimen/ars_100_btn_width"
+                android:layout_height="@dimen/ars_100_btn_height"
+                android:background="@drawable/bg_ars_100_btn_selector"
+                android:text="连接服务"
+                android:textColor="@color/ars_100_btn_text_color"
+                android:textSize="@dimen/ars_100_btn_text_size"/>
+
+            <Button
+                android:id="@+id/btn_ars_start_pos_collect"
+                android:layout_width="@dimen/ars_100_btn_width"
+                android:layout_height="@dimen/ars_100_btn_height"
+                android:background="@drawable/bg_ars_100_btn_selector"
+                android:text="开始POS"
+                android:textColor="@color/ars_100_btn_text_color"
+                android:textSize="@dimen/ars_100_btn_text_size"
+                android:layout_marginLeft="@dimen/ars_100_btn_margin_left"/>
+
+            <Button
+                android:id="@+id/btn_ars_start_pointcloud_collect"
+                android:layout_width="@dimen/ars_100_btn_width"
+                android:layout_height="@dimen/ars_100_btn_height"
+                android:background="@drawable/bg_ars_100_btn_selector"
+                android:text="开始点云"
+                android:textColor="@color/ars_100_btn_text_color"
+                android:textSize="@dimen/ars_100_btn_text_size"
+                android:layout_marginLeft="@dimen/ars_100_btn_margin_left"/>
+
+            <Button
+                android:id="@+id/btn_ars_stop_pointcloud_collect"
+                android:layout_width="@dimen/ars_100_btn_width"
+                android:layout_height="@dimen/ars_100_btn_height"
+                android:background="@drawable/bg_ars_100_btn_selector"
+                android:text="停止点云"
+                android:textColor="@color/ars_100_btn_text_color"
+                android:textSize="@dimen/ars_100_btn_text_size"
+                android:layout_marginLeft="@dimen/ars_100_btn_margin_left"/>
+
+            <Button
+                android:id="@+id/btn_ars_stop_pos_collect"
+                android:layout_width="@dimen/ars_100_btn_width"
+                android:layout_height="@dimen/ars_100_btn_height"
+                android:background="@drawable/bg_ars_100_btn_selector"
+                android:text="停止POS"
+                android:textColor="@color/ars_100_btn_text_color"
+                android:textSize="@dimen/ars_100_btn_text_size"
+                android:layout_marginLeft="@dimen/ars_100_btn_margin_left"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

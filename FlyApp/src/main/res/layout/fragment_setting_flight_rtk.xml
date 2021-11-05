@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_no_rtk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/network_rtk_no_rtk"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/sl_rtk_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/bg_setting_divider_shape"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/setting_horizontal_padding"
+            android:paddingRight="@dimen/setting_horizontal_padding"
+            android:showDividers="middle">
+
+            <com.flycloud.autofly.design.view.setting.SettingCheckView
+                android:id="@+id/sc_open_aircraft_rtk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:design_bsv_description="@string/rtk_open_instruction"
+                app:design_bsv_main_title="@string/aircraft_rtk" />
+
+            <com.flycloud.autofly.design.view.setting.SettingCheckView
+                android:id="@+id/sc_open_network_rtk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:design_bsv_main_title="@string/network_rtk_open" />
+
+            <LinearLayout
+                android:id="@+id/ll_rtk_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.flycloud.autofly.design.view.setting.SettingSpinnerView
+                    android:id="@+id/ss_rtk_service_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:design_bsv_main_title="@string/rtk_service_type"
+                    app:design_ssv_option_width="140dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_network_rtk_connect_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="网络RTK连接状态："
+                        android:textColor="@color/setting_default_text_color_gray"
+                        android:textSize="@dimen/default_text_size_min" />
+
+                    <TextView
+                        android:id="@+id/tv_rtk_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/setting_main_title_text_color"
+                        android:textSize="@dimen/default_text_size_min" />
+
+                    <TextView
+                        android:id="@+id/tv_rtk_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:textColor="@color/setting_main_title_text_color"
+                        android:textSize="@dimen/default_text_size_min" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0">
+
+                        <TextView
+                            android:id="@+id/btn_reconnect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/selector_setting_btn_green"
+                            android:padding="2dp"
+                            android:text="@string/reconnect"
+                            android:textColor="@color/selector_setting_btn_color_green"
+                            android:textSize="@dimen/default_text_size_min" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_rtk_service_type_network"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_rtk_activate_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/setting_default_text_color_gray"
+                        android:textSize="@dimen/default_text_size_min" />
+
+                    <com.flycloud.autofly.design.view.setting.SettingSpinnerView
+                        android:id="@+id/ss_rtk_coordinate_system"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:design_bsv_main_title="@string/rtk_coordinate_system" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_rtk_service_type_custom_network"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/network_rtk_params_setting"
+                        android:textColor="@color/setting_default_text_color_gray"
+                        android:textSize="@dimen/default_text_size_min" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_setting_linear_edit_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/setting_item_common_height"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.0"
+                                android:text="@string/network_rtk_address"
+                                android:textColor="@color/setting_main_title_text_color"
+                                android:textSize="@dimen/setting_main_title_text_size" />
+
+                            <EditText
+                                android:id="@+id/et_address"
+                                android:layout_width="0dp"
+                                android:layout_height="26dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="5.0"
+                                android:background="@drawable/ux_shape_edit_text"
+                                android:cursorVisible="true"
+                                android:gravity="center"
+                                android:imeOptions="actionDone"
+                                android:maxLines="1"
+                                android:textColor="@color/setting_default_text_color"
+                                android:textCursorDrawable="@color/blue"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/setting_item_common_height"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.0"
+                                android:text="@string/network_rtk_port"
+                                android:textColor="@color/setting_main_title_text_color"
+                                android:textSize="@dimen/setting_main_title_text_size" />
+
+
+                            <EditText
+                                android:id="@+id/et_port"
+                                android:layout_width="0dp"
+                                android:layout_height="26dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="5.0"
+                                android:background="@drawable/ux_shape_edit_text"
+                                android:cursorVisible="true"
+                                android:gravity="center"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:textColor="@color/setting_default_text_color"
+                                android:textCursorDrawable="@color/blue"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/setting_item_common_height"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.0"
+                                android:text="@string/network_rtk_mountpoint"
+                                android:textColor="@color/setting_main_title_text_color"
+                                android:textSize="@dimen/setting_main_title_text_size" />
+
+
+                            <EditText
+                                android:id="@+id/et_mountpoint"
+                                android:layout_width="0dp"
+                                android:layout_height="26dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="5.0"
+                                android:background="@drawable/ux_shape_edit_text"
+                                android:cursorVisible="true"
+                                android:gravity="center"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@color/setting_default_text_color"
+                                android:textCursorDrawable="@color/blue"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/setting_item_common_height"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.0"
+                                android:text="@string/network_rtk_account"
+                                android:textColor="@color/setting_main_title_text_color"
+                                android:textSize="@dimen/setting_main_title_text_size" />
+
+
+                            <EditText
+                                android:id="@+id/et_account"
+                                android:layout_width="0dp"
+                                android:layout_height="26dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="5.0"
+                                android:background="@drawable/ux_shape_edit_text"
+                                android:cursorVisible="true"
+                                android:gravity="center"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@color/setting_default_text_color"
+                                android:textCursorDrawable="@color/blue"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/setting_item_common_height"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.0"
+                                android:text="@string/network_rtk_passwork"
+                                android:textColor="@color/setting_main_title_text_color"
+                                android:textSize="@dimen/setting_main_title_text_size" />
+
+
+                            <EditText
+                                android:id="@+id/et_password"
+                                android:layout_width="0dp"
+                                android:layout_height="26dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="5.0"
+                                android:background="@drawable/ux_shape_edit_text"
+                                android:cursorVisible="true"
+                                android:gravity="center"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:textColor="@color/setting_default_text_color"
+                                android:textCursorDrawable="@color/blue"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <com.flycloud.autofly.design.view.setting.SettingTextView
+                            android:id="@+id/st_set_rtk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="当前坐标"
+                    android:textColor="@color/setting_default_text_color_gray"
+                    android:textSize="12sp" />
+
+                <TableLayout
+                    android:id="@+id/tb_status_lat_long"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

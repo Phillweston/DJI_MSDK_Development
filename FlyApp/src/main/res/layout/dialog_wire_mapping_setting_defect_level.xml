@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_dialog_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@color/default_item_background"
+        android:orientation="vertical">
+
+        <com.flycloud.autofly.design.view.setting.SettingSpinnerView
+            android:id="@+id/ss_defect_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:design_bsv_main_title="电压等级"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"/>
+
+        <View
+            style="@style/default_dialog_space_line_hor"/>
+
+        <LinearLayout
+            style="@style/dialog_patrol_setting_item">
+
+            <TextView
+                style="@style/dialog_patrol_setting_title_text"
+                android:text="紧急缺陷:"
+                android:layout_marginStart="0dp"
+                android:gravity="center"/>
+
+            <com.ew.autofly.widgets.CustomBar
+                android:id="@+id/sb_defect_level_urgent"
+                style="@style/dialog_patrol_setting_seekbar" />
+
+            <TextView
+                android:id="@+id/tv_defect_level_urgent"
+                style="@style/dialog_patrol_setting_label_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/dialog_patrol_setting_item">
+
+            <TextView
+                style="@style/dialog_patrol_setting_title_text"
+                android:text="重大缺陷:"
+                android:layout_marginStart="0dp"
+                android:gravity="center"/>
+
+            <com.ew.autofly.widgets.CustomBar
+                android:id="@+id/sb_defect_level_serious"
+                style="@style/dialog_patrol_setting_seekbar" />
+
+            <TextView
+                android:id="@+id/tv_defect_level_serious"
+                style="@style/dialog_patrol_setting_label_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/dialog_patrol_setting_item">
+
+            <TextView
+                style="@style/dialog_patrol_setting_title_text"
+                android:text="一般缺陷:"
+                android:layout_marginStart="0dp"
+                android:gravity="center"/>
+
+            <com.ew.autofly.widgets.CustomBar
+                android:id="@+id/sb_defect_level_normal"
+                style="@style/dialog_patrol_setting_seekbar" />
+
+            <TextView
+                android:id="@+id/tv_defect_level_normal"
+                style="@style/dialog_patrol_setting_label_text" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/line_hor_gray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/default_item_background"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tv_save"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/tv_loadtask_load_radius"
+                android:padding="2dp"
+                android:text="保存"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/widget_camera_zoom_btn_width"
+    android:layout_height="wrap_content"
+    android:background="@color/trans_2"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/btn_zoom_in"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_camera_zoom_btn_height"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_camera_zoom_in" />
+
+    <View
+        style="@style/line_hor_gray"
+        android:layout_marginStart="@dimen/widget_camera_zoon_btn_margin"
+        android:layout_marginEnd="@dimen/widget_camera_zoon_btn_margin"
+        android:layout_height="1px"/>
+
+    <TextView
+        android:id="@+id/tv_zoom_type"
+        android:layout_width="@dimen/widget_camera_zoom_btn_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="光学变焦"
+        android:textColor="@color/white"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/tv_zoom_factor"
+        android:layout_width="@dimen/widget_camera_zoom_btn_width"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="1.0X"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <View
+        style="@style/line_hor_gray"
+        android:layout_marginStart="@dimen/widget_camera_zoon_btn_margin"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="@dimen/widget_camera_zoon_btn_margin"
+        android:layout_height="1px"/>
+
+    <ImageView
+        android:id="@+id/btn_zoom_out"
+        android:layout_width="@dimen/widget_camera_zoom_btn_width"
+        android:layout_height="@dimen/widget_camera_zoom_btn_height"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_camera_zoom_out" />
+
+    <View
+        style="@style/line_hor_gray"
+        android:layout_marginStart="@dimen/widget_camera_zoon_btn_margin"
+        android:layout_marginEnd="@dimen/widget_camera_zoon_btn_margin"
+        android:layout_height="1px"/>
+
+    <TextView
+        android:id="@+id/btn_zoom_reset"
+        android:layout_width="@dimen/widget_camera_zoom_btn_width"
+        android:layout_height="@dimen/widget_camera_zoom_btn_height"
+        android:gravity="center"
+        android:text="重置"
+        android:textColor="@color/selector_common_btn_textcolor"
+        android:textSize="14dp" />
+
+</LinearLayout>

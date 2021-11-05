@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tl_switch_content"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            app:tabIndicatorHeight="2dp"
+            app:tabTextColor="@color/blue"
+            app:tabSelectedTextColor="@color/default_blue"
+            app:tabIndicatorColor="@color/default_blue"
+            app:tabMode="fixed"
+            app:tabGravity="center"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/flParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title_bar"/>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_photo_info"
+        android:layout_width="@dimen/dashboard_widget_width2"
+        android:layout_height="wrap_content"
+        android:padding="4pt"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dashboard_rtk"
+            android:layout_width="@dimen/dashboard_widget_width"
+            android:layout_height="@dimen/dashboard_widget_height"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="RTK: 未开启"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dashboard_widget_text_size" />
+
+        <TextView
+            android:id="@+id/dashboard_fly_time"
+            android:layout_width="@dimen/dashboard_widget_width"
+            android:layout_height="@dimen/dashboard_widget_height"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="时长: N/A 分钟"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dashboard_widget_text_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

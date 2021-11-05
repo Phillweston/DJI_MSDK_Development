@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/trans"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_load_task_name"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_1"/>
+
+        <TextView
+            android:id="@+id/tv_load_task_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/white_1"/>
+
+        <TextView
+            android:id="@+id/tv_load"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:padding="2dp"
+            android:text="载入"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_space_line" />
+</LinearLayout>

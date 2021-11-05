@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="channel_app_name">AZUP地面站</string>
+    <string name="sdk_registration_message">首次使用本软件，请先联网注册！若联网后仍无法进入，请更换网络或者进入后台关闭应用后重启。</string>
+
+    <string-array name="spinner_voltage">
+        <item>10KV</item>
+        <item>35KV</item>
+        <item>50KV</item>
+        <item>110KV</item>
+        <item>220KV</item>
+        <item>500KV</item>
+        <item>±500KV</item>
+        <item>800KV</item>
+        <item>±800KV</item>
+    </string-array>
+
+    <string name="dimen_main_small_btn_ratio">h,1:1</string>
+
+    <string name="message_setting_success">设置成功</string>
+    <string name="message_login_to_dji_success">登录大疆账号成功</string>
+    <string name="message_login_to_dji_fail">登录大疆账号失败</string>
+
+    <string name="error_network">网络错误</string>
+    <string name="error_server">服务器错误</string>
+    <string name="error_setting_fail">设置失败</string>
+
+    <string name="error_waypoint_distance_too_close">航点距离太近无法执行，请检查任务</string>
+    <string name="error_waypoint_rotate_aircraft_action_not_valid">航点朝向参数不正确，超出范围</string>
+    <string name="error_waypoint_gimbal_pitch_not_valid">航点云台参数不正确，超出范围</string>
+    <string name="error_waypoint_gimbal_pitch_beyond_range_extension">航点云台参数超出云台限位限制</string>
+    <string name="error_waypoint_first_altitude_less_than_zero">第一个航点高度小于零</string>
+    <string name="error_waypoint_camera_zoom_not_vaild">航点相机焦距参数不正确,超出范围</string>
+    <string name="error_waypoint_camera_zoom_not_support">当前相机不支持航点变焦</string>
+
+    <string name="error_get_max_flight_height">获取飞行器最大飞行高度失败，请重新检查设置项</string>
+    <string name="error_get_go_home_height">获取飞行器返航高度失败，请重新检查设置项</string>
+
+    <string name="error_input_empty">输入为空</string>
+    <string name="error_import_data_fail">导入数据失败</string>
+
+
+    <string name="delete">删除</string>
+    <string name="export">导出</string>
+    <string name="menu">菜单</string>
+    <string name="read">查看</string>
+
+    <string name="normal">矢量地图</string>
+    <string name="DESCRIPTION_DRAW_CIRCLE">绘制航区</string>
+    <string name="DESCRIPTION_MAP_LOCATION">定位</string>
+    <string name="DESCRIPTION_RESUME_TASK">继续任务</string>
+    <string name="DESCRIPTION_PAUSE_TASK">暂停任务</string>
+
+    <!-- 以下定义是从GIS中导入 -->
+    <string name="statebar_label_coord">[WGS84] 经度:%1$sE 纬度:%2$sN \t [BJ54]东:%3$s 北:%4$s</string>
+    <string name="statebar_label_coord_for_bing">[WGS84] 经度:%1$sE 纬度:%2$sN</string>
+    <string name="statebar_label_scale">比例:%1$s</string>
+    <string name="statebar_label_z">高度:%1$s</string>
+    <string name="ftp_label_1">局域网连接下可以在您的电脑和设备之间传输文件</string>
+    <string name="ftp_label_2">在电脑浏览器中输入以下网址访问：</string>
+    <string name="ftp_label_3">1.确定您的设备和电脑已经接入同一局域网</string>
+    <string name="ftp_label_4">当前网络名称:</string>
+    <string name="ftp_label_5">2.WiFi传输过程中,请勿退出本页面</string>
+    <string name="ftp_label_6">3.Windows系统访问方法如下图</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="setting_map">地图设置</string>
+    <string name="setting_map_description">中国大陆境内（不包含港澳台）地图坐标系统与境外地区有所不同，请选择当前所在的地区再使用，避免产生坐标偏差。</string>
+    <string name="select_map">地图选择：</string>
+    <string name="google_map">Google地图</string>
+    <string name="opencycle_map">OpenCycleMap地图</string>
+    <string name="gaode_map">高德地图</string>
+    <string name="map_cache">地图缓存</string>
+    <string name="setting_url">接口设置</string>
+    <string name="upload_image_url">图片上传接口</string>
+    <string name="download_image_url">下载成果接口</string>
+    <string name="url_tip">请输入接口地址</string>
+    <string name="clear_cache_tip_title">清除缓存提示</string>
+    <string name="clear_cache_tip">您确认要清除地图缓存吗?</string>
+    <string name="notice">提示</string>
+    <string name="delete_cloud_mission">删除云端任务</string>
+    <string name="sure">确定</string>
+    <string name="cancle">取消</string>
+    <string name="resume">继续</string>
+    <string name="done">完成</string>
+    <string name="back">返回</string>
+    <string name="setting">设置</string>
+    <string name="exit">退出</string>
+    <string name="clear_cache_success">清除缓存成功</string>
+    <string name="clear_cache_fail">清除缓存失败</string>
+    <string name="update_check">版本更新</string>
+
+    <string name="system_permission_request">权限申请</string>
+    <string name="system_permission_request_explain">权限未正常授予，应用需要相应手机权限才能正常工作，如需修改权限请点击“设置”，若不同意请点击“退出”退出应用</string>
+
+    <string name="txt_fine_patrol">精细巡视</string>
+    <string name="txt_fine_patrol_auto">精细巡视(巡检模式)</string>
+    <string name="txt_fine_patrol_manual">精细巡视(学习模式)</string>
+    <string name="txt_line_patrol">航点任务</string>
+    <string name="txt_belt_patrol">带状正射</string>
+    <string name="txt_channel_patrol">通道巡视</string>
+    <string name="txt_belt_tilt_patrol">带状倾斜</string>
+    <string name="txt_tree_obstacle_patrol">树障巡视</string>
+    <string name="txt_fast_mapping_positive">正射影像</string>
+    <string name="txt_fast_mapping_tilt">倾斜摄影</string>
+    <string name="txt_panoramic_acquisition">全景采集</string>
+    <string name="txt_panoramic_acquisition_auto">全景采集(自动)</string>
+    <string name="txt_panoramic_acquisition_manual">全景采集(手动)</string>
+    <string name="txt_hot_point_collect">环绕飞行</string>
+    <string name="txt_manual_collect">手动飞行</string>
+    <string name="txt_river_patrol">河道巡视</string>
+    <string name="txt_river_patrol_study">河道巡视(学习模式)</string>
+    <string name="txt_river_patrol_execute">河道巡视(巡视模式)</string>
+    <string name="txt_river_patrol_manual">河道巡视(手绘模式)</string>
+    <string name="txt_multispectral">多光谱</string>
+    <string name="txt_laser_point_cloud">点云采集</string>
+    <string name="txt_stand_fast_mapping_collect">立面正射</string>
+    <string name="txt_substation_patrol">变电站巡检</string>
+
+    <string name="txt_help_application">帮助</string>
+
+    <string name="txt_mission_manage">任务管理</string>
+    <string name="txt_fly_record">飞行记录</string>
+    <string name="txt_sys_setting">系统设置</string>
+    <string name="txt_simulate_flight">模拟飞行</string>
+    <string name="txt_psdk_enable">单线避障</string>
+
+    <string name="txt_grid_line_name">线路名称</string>
+    <string name="txt_voltage_grade">电压等级</string>
+    <string name="txt_manage_group">管理班组</string>
+    <string name="txt_tower_no">杆塔编号</string>
+    <string name="txt_longitude">经度</string>
+    <string name="txt_latitude">纬度</string>
+    <string name="txt_tower_altitude">杆塔高度</string>
+
+    <string name="txt_simulate_notify">未连接</string>
+    <string name="setting_more">高级设置</string>
+    <string name="no_equipment">设备编号</string>
+
+    <string name="txt_override_exist_tower_number">存在相同的杆塔编号，是否覆盖？</string>
+    <string name="delete_mission_notice">删除本地任务\n确定要删除吗</string>
+    <string name="default_delete_notice">删除后将无法恢复！\n确定要删除吗？</string>
+    <string name="default_nodata">暂无数据</string>
+    <string name="default_delete_success">删除成功</string>
+    <string name="default_delete_fail">删除失败</string>
+
+    <string name="weather_current">实况天气</string>
+    <string name="weather_forecast">预报天气</string>
+    <string name="weather_loading">天气加载中&#8230;</string>
+    <string name="weather_load_error">加载天气错误</string>
+
+    <string name="mission_operate_preview">影像预览</string>
+    <string name="mission_operate_bluetooth_transmission">蓝牙传输</string>
+    <string name="mission_operate_upload">拷贝图像</string>
+    <string name="mission_operate_stitch">拼接图像</string>
+    <string name="mission_operate_delete">删除任务</string>
+    <string name="mission_operate_notice_checking_box_connect">正在检查盒子连接状态</string>
+    <string name="mission_operate_notice_reconnect_box">请先连接到盒子后再重新拷贝</string>
+    <string name="mission_operate_notice_has_other_mission">你有其他任务拼接中：</string>
+    <string name="mission_operate_notice_insert_sdcard">请先插入SD卡到盒子后再重新拷贝</string>
+    <string name="mission_operate_notice_copying">正在拷贝图像，请稍后…</string>
+    <string name="mission_operate_notice_copy_start_success">启动拷贝成功</string>
+    <string name="mission_operate_notice_copy_start_fail">启动拷贝失败</string>
+    <string name="mission_operate_notice_copy_success">拷贝成功</string>
+    <string name="mission_operate_notice_stitch_starting">正在启动拼接</string>
+    <string name="mission_operate_notice_stitch_start_success">启动拼接成功</string>
+    <string name="mission_operate_notice_stitch_start_fail">启动拼接失败</string>
+    <string name="mission_operate_notice_stitching">正在拼接</string>
+    <string name="mission_operate_notice_stitch_stopping">正在停止拼接</string>
+    <string name="mission_operate_notice_stitch_stop_success">停止拼接成功</string>
+    <string name="mission_operate_notice_stitch_stop_fail">停止拼接失败</string>
+    <string name="mission_operate_notice_stitch_success">拼接成功</string>
+    <string name="mission_operate_notice_stitch_already_success">该任务已拼接完成，可以下载成果</string>
+    <string name="mission_operate_download_result">下载成果</string>
+    <string name="mission_operate_error">任务出错</string>
+    <string name="mission_operate_data_error">任务数据出错</string>
+    <string name="mission_operate_by_data_empty">任务数据为空</string>
+
+    <string name="flight_record_delete_fail">删除飞行记录失败</string>
+
+    <string name="multispectral_calibration_step_1">1. 将遥控飞机沿Z轴径向旋转（偏转/偏航），直至多光谱传感器指示灯闪烁绿色信号。</string>
+    <string name="multispectral_calibration_step_2">2. 将遥控飞机沿Y轴旋转（侧伏/俯仰），直至多光谱传感器指示灯闪烁蓝色信号。</string>
+    <string name="multispectral_calibration_step_3">3. 将遥控飞机沿X轴旋转（横摇/侧倾），直至多光谱传感器指示灯改变颜色。</string>
+    <string name="multispectral_please_conncet">请通过wifi连接多光谱传感器</string>
+    <string name="multispectral_please_stop_capture">请先停止多光谱拍摄（按C2键）</string>
+    <string name="multispectral_capture_start_success">启动多光谱拍摄成功</string>
+    <string name="multispectral_capture_start_failed">启动多光谱拍摄失败</string>
+    <string name="multispectral_capture_stop_failed">停止多光谱拍摄失败</string>
+    <string name="multispectral_capture_stop_success">停止多光谱拍摄成功</string>
+    <string name="multispectral_storage_failed">获取多光谱存储空间信息失败</string>
+    <string name="multispectral_setting_failed">设置多光谱参数失败</string>
+    <string name="multispectral_status_failed">获取多光谱状态失败</string>
+    <string name="multispectral_radiometric_calibration">1. 将瞄准器置于平坦处。\n 2. 请确保无任何阴影区域覆盖瞄准器。
+       \n 3. 将多光谱传感器置于瞄准器上方。 相机应捕捉到整个瞄准器。\n 4. 点击开始按钮进行辐射校正。</string>
+    <string name="multispectral_radiometric_calibration_running">正在进行辐射校正</string>
+    <string name="multispectral_radiometric_calibration_success">辐射校正完成</string>
+    <string name="multispectral_radiometric_calibration_failed">辐射校正失败</string>
+    <string name="multispectral_stop_capture_tips_when_finish">任务完成,是否停止多光谱拍摄</string>
+    <string name="multispectral_check_sd">请检查多光谱是否插入sd卡或内存卡存储空间不足</string>
+    <string name="multispectral_connect_instruction">连接说明：\n 1. 请确保多光谱处于（通电）开启状态。\n 2. 如果多次尝试连接不成功，请打开手机Wi-Fi无线网络设置，手动选择\"Sequoia\"连接。</string>
+    <string name="txt_rtk">RTK</string>
+
+    <string name="no_optional_data">无可选数据</string>
+
+
+    <string name="select_waypoint_type">选择航点类型</string>
+    <string name="add_waypoint">添加航点</string>
+    <string name="setting_simulator">模拟飞行</string>
+
+    <string name="device_unconnected">设备未连接</string>
+
+
+    <string name="check_max_flight_height_failed">航线的最大高度(%1$dm)大于飞行器设置的最大飞行高度(%2$dm)，请重新检查设置项</string>
+    <string name="check_go_home_height">航线的最大高度(%1$.2fm)大于飞行器设置的返航高度(%2$dm)</string>
+    <string name="beyond_mission_flight_height_limit">航线任务最大高度超过500米限制</string>
+
+    <string name="river_patrol_record_waypoint_instruction">可使用遥控器快捷键（拍照键或C1/C2键）记录航点</string>
+    <string name="sort_file_by_name">按名称</string>
+    <string name="sort_file_by_time">按时间</string>
+    <string name="sort_file">文件排序</string>
+    <string name="sort_file_descent">降序</string>
+    <string name="sort_file_ascent">升序</string>
+    <string name="video_live">视频直播</string>
+    <string name="start_live">开始直播</string>
+    <string name="stop_live">停止直播</string>
+
+    <string name="patrol_job">巡检工单</string>
+    <string name="patrol_mission_list">任务列表</string>
+
+    <string name="rtk_open_instruction">当开启RTK后状态不正常，手动关闭切换回GNSS模式使用（若起飞后再开启RTK开关，导航系统将继续使用GNSS）</string>
+    <string name="network_rtk_open">开启网络RTK功能</string>
+    <string name="network_rtk_params_setting">设置网络RTK参数</string>
+    <string name="network_rtk_address">域名/IP：</string>
+    <string name="network_rtk_port">端口：</string>
+    <string name="network_rtk_mountpoint">Mountpoint/源/挂载点：</string>
+    <string name="network_rtk_account">账号：</string>
+    <string name="network_rtk_passwork">密码：</string>
+    <string name="cannot_empty">不能为空</string>
+    <string name="network_rtk_no_rtk">无RTK，不可设置</string>
+    <string name="aircraft_rtk">飞机RTK</string>
+    <string name="network_rtk_setting">网络RTK设置</string>
+    <string name="comfirm_job">确认任务</string>
+    <string name="preview_job">预览任务</string>
+    <string name="progress_loading">正在加载</string>
+
+    <string name="bristol_model">Bristol.dae</string>
+    <string name="bristol_skin">Bristol.png</string>
+
+    <string name="fly_check_sd_no_enough">相机内存卡储存空间不足，是否继续飞行？</string>
+    <string name="change_map_notice">切换地图和地区都将会重新加载界面，并清除当前界面已绘制内容，是否继续？</string>
+    <string name="select_altitude_data_source">选择高程数据源</string>
+    <string name="tower_fly_altitude_source_dem_desc">数据说明：全国区域（不包含港澳台）的地形数据可以下载，但精度相对较低（30M分辨率卫星数据）【下载页面：系统设置-地形数据】。通过该数据可以获取杆塔地面海拔数据。</string>
+    <string name="tower_fly_altitude_source_kml_desc">数据说明：KML数据需要手动导入，要求是平台支持的格式，精度较高，仅支持RTK飞机。通过该数据可以获取杆塔塔顶海拔数据</string>
+    <string name="no_selected_files">没有选中文件</string>
+
+    <string name="fine_patrol_select_stride_fly_strategy_notice">提示：若地形环境复杂，可到\"自定义航高\"
+        选项设置每一基杆塔的进塔高度和出塔高度。</string>
+    <string name="fine_patrol_select_stride_fly_strategy_route">该策略模式下，飞机将会沿杆塔线路飞行并沿杆塔线路返航。
+        对于跳塔巡检作业，飞机会经过过路塔。该模式适合地形起伏大、环境复杂的场景下使用。（注意：若过路塔无航线数据，飞机将不会经过过路塔）</string>
+    <string name="fine_patrol_select_stride_fly_strategy_straight">该策略模式下，飞机从当前杆塔到下一基杆塔以直线飞行，
+        任务完成后将以直线返航。对于跳塔巡检作业，飞机将不会经过过路塔。该模式适合地形平坦、环境开阔的场景下使用。</string>
+    <string name="safety_priority">安全优先</string>
+    <string name="effective_priority">效率优先</string>
+    <string name="fly_strategy">飞行策略</string>
+    <string name="tips_no_delete_items">没有选择条目</string>
+    <string name="rtk_service_type">RTK服务类型</string>
+    <string name="rtk_coordinate_system">RTK坐标系统</string>
+    <string name="rtk_build_in_plan_state_no_plan">获取当前设备内置网络RTK服务信息激活信息失败，请打开DJI Pilot软件进行购买/激活</string>
+    <string name="rtk_build_in_plan_state_not_purchased">未购买/激活内置网络RTK服务，请打开DJI Pilot软件进行购买/激活</string>
+    <string name="rtk_build_in_plan_state_unbound">当前设备未绑定内置网络RTK服务，请打开DJI Pilot软件进行设置</string>
+    <string name="rtk_build_in_plan_state_unknown">获取当前设备内置网络RTK服务信息失败，请打开DJI Pilot软件进行设置</string>
+    <string name="reconnect">重新连接</string>
+    <string name="rtk_get_fail">获取飞机RTK失败</string>
+    <string name="please_open_aircraft_rtk">请先开启飞机RTK</string>
+    <string name="success">success</string>
+    <string name="channel_app_sys_name">AZUP地面站</string>
+
+    <string name="channel_menu_model_change">模式切换</string>
+    <string name="channel_menu_mission_manage">任务管理</string>
+    <string name="channel_menu_fly_record">飞行记录</string>
+
+    <string name="channel_mode_line_patrol">航点任务</string>
+    <string name="channel_mode_belt_patrol">带状正射</string>
+    <string name="channel_mode_manual_collect">手动飞行</string>
+
+</resources>

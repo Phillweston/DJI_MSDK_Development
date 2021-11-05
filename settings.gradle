@@ -1,0 +1,2 @@
+include ':FlyApp', ':base', ':lib_ux',
+        ':control', ':lib_map', ':lib_design', ':lib_video'

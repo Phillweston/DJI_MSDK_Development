@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/bg_setting_divider_shape"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/setting_horizontal_padding"
+                android:paddingRight="@dimen/setting_horizontal_padding"
+                android:showDividers="middle">
+
+                <com.flycloud.autofly.design.view.setting.SettingSpinnerView
+                    android:id="@+id/ss_gimbal_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:design_bsv_main_title="云台模式" />
+
+                <com.flycloud.autofly.design.view.setting.SettingTextView
+                    android:id="@+id/st_gimbal_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.flycloud.autofly.design.view.setting.SettingCheckView
+                    android:id="@+id/sc_gimbal_extend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:design_bsv_description="可向上扩展云台角度"
+                    app:design_bsv_main_title="云台俯仰限位扩展" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#92A7D1" />
+    <corners
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:topRightRadius="10dp"
+        android:topLeftRadius="10dp" />
+
+    <padding
+        android:bottom="@dimen/monitor_font_padding"
+        android:left="@dimen/monitor_font_padding"
+        android:right="@dimen/monitor_font_padding"
+        android:top="@dimen/monitor_font_padding" />
+</shape>

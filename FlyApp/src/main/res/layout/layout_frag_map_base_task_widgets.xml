@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageButton
+        android:id="@+id/imgBtnSaveTask"
+        android:layout_width="@dimen/map_btn_small_p"
+        android:layout_height="@dimen/map_btn_small_p"
+        android:layout_marginBottom="4pt"
+        android:src="@drawable/selector_save_task"
+        android:background="@drawable/bg_common_btn_shape"
+        android:scaleType="centerCrop"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4pt">
+
+        <ImageButton
+            android:id="@+id/imgBtnLoadTaskClear"
+            android:layout_width="@dimen/map_btn_small_p"
+            android:layout_height="@dimen/map_btn_small_p"
+            android:layout_marginRight="5pt"
+            android:src="@drawable/icon_clear_selector"
+            android:background="@drawable/bg_common_btn_shape"
+            android:scaleType="centerCrop"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/imgBtnLoadTask"
+            android:layout_width="@dimen/map_btn_small_p"
+            android:layout_height="@dimen/map_btn_small_p"
+            android:src="@drawable/selector_load_task"
+            android:background="@drawable/bg_common_btn_shape"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+</merge>

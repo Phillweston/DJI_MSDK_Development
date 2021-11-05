@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trans_2">
+
+
+    <ListView
+        android:id="@+id/lv_setting"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:scrollbars="none" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_title_height">
+
+            <TextView
+                android:id="@+id/tv_setting_title"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/setting_title_height"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/iv_setting_back"
+                android:layout_width="@dimen/setting_title_height"
+                android:layout_height="@dimen/setting_title_height"
+                android:src="@drawable/ic_setting_back"
+                android:scaleType="center"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/iv_setting_close"
+                android:layout_width="@dimen/setting_title_height"
+                android:layout_height="@dimen/setting_title_height"
+                android:src="@drawable/ic_settting_close"
+                android:scaleType="center"/>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_replace_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

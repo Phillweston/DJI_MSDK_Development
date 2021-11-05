@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background">
+
+    <RelativeLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/menu_item_selected">
+
+        <ImageButton
+            android:id="@+id/imgBtnBack"
+            android:layout_width="@dimen/top_bar_btn_height"
+            android:layout_height="@dimen/top_bar_btn_height"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:padding="@dimen/top_bar_back_margin"
+            android:src="@drawable/btn_title_back_selector"/>
+
+        <TextView
+            android:id="@+id/tvMissionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="任务执行情况"
+            android:textColor="@color/default_blue"
+            android:textSize="@dimen/top_bar_font"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llTop"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <com.ew.autofly.widgets.DrawableCenterTextView
+                android:id="@+id/tv_preview"
+                android:layout_width="@dimen/mission_operate_btn_width"
+                android:layout_height="@dimen/mission_operate_btn_height"
+                android:background="@drawable/bg_mission_operate_btn_blue"
+                android:drawableLeft="@drawable/selector_mission_resume_fly"
+                android:gravity="center_vertical"
+                android:text="@string/mission_operate_preview"
+                android:textColor="@color/selector_mission_operate_btn_textcolor_blue"
+                android:textSize="@dimen/mission_operate_btn_text_size"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.ew.autofly.widgets.DrawableCenterTextView
+                android:id="@+id/tv_upload_media"
+                android:layout_width="@dimen/mission_operate_btn_width"
+                android:layout_height="@dimen/mission_operate_btn_height"
+                android:background="@drawable/bg_mission_operate_btn_blue"
+                android:drawableLeft="@drawable/selector_mission_upload_media"
+                android:gravity="center_vertical"
+                android:text="上传图像"
+                android:textColor="@color/selector_mission_operate_btn_textcolor_blue"
+                android:textSize="@dimen/mission_operate_btn_text_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.ew.autofly.widgets.DrawableCenterTextView
+                android:id="@+id/tv_mosaic_images"
+                android:layout_width="@dimen/mission_operate_btn_width"
+                android:layout_height="@dimen/mission_operate_btn_height"
+                android:background="@drawable/bg_mission_operate_btn_blue"
+                android:drawableLeft="@drawable/selector_mission_mosaic_images"
+                android:gravity="center_vertical"
+                android:text="@string/mission_operate_stitch"
+                android:textColor="@color/selector_mission_operate_btn_textcolor_blue"
+                android:textSize="@dimen/mission_operate_btn_text_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.ew.autofly.widgets.DrawableCenterTextView
+                android:id="@+id/tv_delete_mission"
+                android:layout_width="@dimen/mission_operate_btn_width"
+                android:layout_height="@dimen/mission_operate_btn_height"
+                android:background="@drawable/bg_mission_operate_btn_red"
+                android:drawableLeft="@drawable/selector_mission_delete"
+                android:gravity="center_vertical"
+                android:text="@string/mission_operate_delete"
+                android:textColor="@color/selector_mission_operate_btn_textcolor_red"
+                android:textSize="@dimen/mission_operate_btn_text_size"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_table_head"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_below="@id/ll_function"
+        android:background="#445477"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="26dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="飞行架次"
+            android:textColor="@color/default_blue"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="开始时间"
+            android:textColor="@color/default_blue"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="结束时间"
+            android:textColor="@color/default_blue"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="航高/分辨率"
+            android:textColor="@color/default_blue"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="航向/旁向"
+            android:textColor="@color/default_blue"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="照片数量"
+            android:textColor="@color/default_blue"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="飞行状态"
+            android:textColor="@color/default_blue"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_mission"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_table_head"
+        android:cacheColorHint="#00000000"
+        android:choiceMode="singleChoice"
+        android:divider="#445477"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/transparent"
+        android:overScrollMode="never"
+        android:scrollbars="none"/>
+
+</RelativeLayout>

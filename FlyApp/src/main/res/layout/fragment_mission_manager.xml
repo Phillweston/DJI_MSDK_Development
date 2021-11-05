@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@drawable/title_color_gradient"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/iv_menu"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_toRightOf="@+id/iv_menu"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/top_icon_margin"
+            android:text="@string/txt_mission_manage"
+            android:textColor="#fff"
+            android:textSize="@dimen/top_bar_left_font"/>
+
+        <TextView
+            android:id="@+id/tv_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="@dimen/top_icon_margin"
+            android:textColor="#25e0e7"
+            android:textSize="@dimen/top_bar_center_font"/>
+
+        <ImageView
+            android:id="@+id/iv_bluetooth_receive"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/selector_icon_bluetooth"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_bluetooth_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tv_sys_setting_radius"
+            android:text="@string/mission_operate_bluetooth_transmission"
+            android:textColor="@color/black_4"
+            android:textSize="@dimen/top_bar_font_small"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_mission"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_mission_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/icon_nodata"
+        android:drawablePadding="40dp"
+        android:gravity="center"
+        android:text="@string/default_nodata"
+        android:textColor="#909090"
+        android:textSize="28sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

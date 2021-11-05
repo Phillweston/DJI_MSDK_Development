@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/selector_dialog_list_item_blue">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/iv_finish_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_finish_enable"/>
+
+        <TextView
+            android:layout_toEndOf="@+id/iv_finish_status"
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/btn_pro"
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:ellipsize="end"
+            android:text="嘉实线#09~#45"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <com.flycloud.autofly.ux.view.progress.ProgressButton
+            android:id="@+id/btn_pro"
+            android:layout_width="60dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            app:pb_backgroud_color="@color/blue"
+            app:pb_backgroud_second_color="@color/trans"
+            app:pb_backgroud_strokeWidth="1dp"
+            app:pb_radius="15"
+            app:pb_text_color="@color/blue"
+            app:pb_text_covercolor="@color/white"
+            app:pb_text_finish="载入任务"
+            app:pb_text_normal="下载任务"
+            app:pb_text_pause="继续" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_reset"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:background="#C2C2C2"
+        android:gravity="center"
+        android:text="重置"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_sync"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:background="#FF0000"
+        android:gravity="center"
+        android:text="同步"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

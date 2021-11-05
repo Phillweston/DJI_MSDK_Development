@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/menu_item_selected">
+
+        <ImageButton
+            android:id="@+id/imgBtnBack"
+            android:layout_width="@dimen/top_bar_btn_height"
+            android:layout_height="@dimen/top_bar_btn_height"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:padding="@dimen/top_bar_back_margin"
+            android:src="@drawable/btn_title_back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="飞行回放"
+            android:textColor="@color/default_blue"
+            android:textSize="@dimen/top_bar_font" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_playpic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llTop"
+
+        >
+
+        <com.esri.android.map.MapView
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_top_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llTop"
+        android:alpha="0.8"
+        android:background="@color/black_5"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:id="@+id/llayout_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_product"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/tv_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/play_back_title_text_color"
+                android:textSize="@dimen/play_back_title_text_size" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/llayout_product"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="定位中…"
+                    android:textColor="@color/play_back_title_text_color"
+                    android:textSize="@dimen/play_back_title_text_size" />
+
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/play_back_title_text_color"
+                    android:textSize="@dimen/play_back_title_text_size" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/play_back_totaltime" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="飞行总时间"
+                            android:textColor="@color/play_back_title_text_color"
+                            android:textSize="@dimen/play_back_title_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_flight_total_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/play_back_title_text_color"
+                            android:textSize="@dimen/play_back_title_text_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/play_back_total_distance" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="飞行总距离"
+                            android:textColor="@color/play_back_title_text_color"
+                            android:textSize="@dimen/play_back_title_text_size" />
+
+
+                        <TextView
+                            android:id="@+id/tv_flight_total_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/play_back_title_text_color"
+                            android:textSize="@dimen/play_back_title_text_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/play_back_maxheight" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最大高度"
+                            android:textColor="@color/play_back_title_text_color"
+                            android:textSize="@dimen/play_back_title_text_size" />
+
+
+                        <TextView
+                            android:id="@+id/tv_flight_max_height"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/play_back_title_text_color"
+                            android:textSize="@dimen/play_back_title_text_size" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_telemetry_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlayout_top_information"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_current_height"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="高度:N/A"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/play_back_realtime_text_size" />
+
+
+        <TextView
+            android:id="@+id/tv_current_distance"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="距离:N/A"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/play_back_realtime_text_size" />
+
+
+        <TextView
+            android:id="@+id/tv_current_vspeed"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="垂直速度:N/A"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/play_back_realtime_text_size" />
+
+
+        <TextView
+            android:id="@+id/tv_current_hspeed"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="水平速度:N/A"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/play_back_realtime_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_telemetry_info"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_longitude"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="经度:N/A"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/play_back_realtime_text_size" />
+
+        <TextView
+            android:id="@+id/tv_latitude"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="纬度:N/A"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/play_back_realtime_text_size" />
+
+        <TextView
+            android:id="@+id/tv_current_battery"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/playback_battery"
+            android:singleLine="true"
+            android:text="N/A"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/play_back_realtime_text_size" />
+
+
+        <TextView
+            android:id="@+id/tv_current_mode"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/playback_mode"
+            android:singleLine="true"
+            android:text="N/A"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/play_back_realtime_text_size" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_play_set"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#d7cfcc"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/iv_play_back_controller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/play_back_controller" />
+
+
+            <LinearLayout
+                android:id="@+id/llayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/selector_playback_play"
+                    android:button="@null" />
+
+                <TextView
+                    android:id="@+id/tv_playspeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="X 1"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/sbar_play"
+            style="@style/SeekBar.Normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlayout_controller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rlayout_bottom">
+
+
+        <com.ew.autofly.module.flightrecord.widgets.PlayBackControlGroup
+            android:id="@+id/control_group_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.ew.autofly.module.flightrecord.widgets.PlayBackControlGroup
+            android:id="@+id/control_group_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/control_group_left" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

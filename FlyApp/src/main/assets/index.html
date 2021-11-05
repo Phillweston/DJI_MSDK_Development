@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>高程剖面</title>
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#container').highcharts({
+                chart: {
+                    type: 'areaspline'
+                },
+                title: {
+                    text: '地形剖面'
+                },
+                subtitle: {
+                    text: ''
+                },
+                xAxis: {
+                    labels: {
+                        formatter: function () {
+                            return this.value * 2 + "米";
+                        }
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: '高度(米)'
+                    },
+                    min: %1$d,
+                    max: %2$d,
+                    labels: {
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },
+                tooltip: {
+                    formatter: function() {
+                        window.location.href = 'LOCIN://' + this.x * 2;
+                        return '<b>地形高度:</b>' + this.y + '米<br/><b>距离:</b>' + this.x * 2 + '米';
+                    }
+                },
+                plotOptions: {
+                    areaspline: {
+                        pointStart: 0,
+                        marker: {
+                            enabled: false,
+                            symbol: 'circle',
+                            radius: 0,
+                            states: {
+                                hover: {
+                                    enabled: true
+                                }
+                            }
+                        }
+                    }
+                },
+                credits: {
+                    text: '',
+                    href: ''
+                },
+                legend: {
+                    enabled: false
+                },
+                series: [{
+                    name: '剖面',
+                    data:%3$s,
+                }
+                ]
+            });
+        });
+    </script>
+</head>
+
+<body>
+<script src="./highcharts.js"></script>
+<div id="container" style="min-width: 310px; height: 200px; margin: 0 auto"></div>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="350dp"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/menu_item_selected"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/ib_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_close_loadtask_selector"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="连接多光谱"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size_medium"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_sep"
+        style="@style/line_hor_gray"
+        android:layout_below="@id/rl_title"
+        android:layout_marginBottom="3dip"
+        android:background="@color/dialog_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@color/menu_item_normal"
+        android:layout_below="@id/v_sep">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ic_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/icon_wifi"/>
+
+            <TextView
+                android:layout_toRightOf="@id/ic_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无线网络"
+                android:layout_marginLeft="14dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <CheckBox
+                android:id="@+id/cb_wifi"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:button="@drawable/btn_switch_selector"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp">
+
+            <ImageView
+                android:id="@+id/ic_multispectral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/icon_multispectral_connect"/>
+
+            <TextView
+                android:id="@+id/tv_multispectral"
+                android:layout_toRightOf="@id/ic_multispectral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="连接多光谱设备"
+                android:layout_marginLeft="14dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/cb_multispectral"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/btn_switch_selector"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/multispectral_connect_instruction"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="5dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

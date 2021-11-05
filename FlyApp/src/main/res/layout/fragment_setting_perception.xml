@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/bg_setting_divider_shape"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/setting_horizontal_padding"
+                android:paddingRight="@dimen/setting_horizontal_padding"
+                android:showDividers="middle">
+
+                <com.flycloud.autofly.design.view.setting.SettingCheckView
+                    android:id="@+id/sc_collision_avoidance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:design_bsv_main_title="开启视觉避障"
+                    app:design_bsv_description="飞行器在前/后视感知视野中检测到障碍物时，会自动悬停（最大飞行速度限制为14m/s）。"/>
+
+                <com.flycloud.autofly.design.view.setting.SettingCheckView
+                    android:id="@+id/sc_radar_sound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:design_bsv_main_title="开启避障声音" />
+
+                <com.flycloud.autofly.design.view.setting.SettingCheckView
+                    android:id="@+id/sc_radar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:design_bsv_main_title="显示雷达图" />
+
+                <com.flycloud.autofly.design.view.setting.SettingCheckView
+                    android:id="@+id/sc_vision_assisted_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:design_bsv_main_title="启用下视觉视觉定位"
+                    app:design_bsv_description="在GPS信号不佳的地方稳定悬停，并对降落保护等功能提供支持。"/>
+
+                <com.flycloud.autofly.design.view.setting.SettingCheckView
+                    android:id="@+id/sc_rth_obstacle_avoidance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:design_bsv_main_title="返航障碍物检测"
+                    app:design_bsv_description="飞行器在返航过程中遇到障碍物时会主动刹车并自动升高避开。"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_second_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_material_layout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/base_bg_dialog_material_card"
+              android:contentDescription="root"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="@dimen/base_dialog_content_title_paddingLeft"
+        android:paddingTop="10dp"
+        android:textColor="@color/base_btn_negative"
+        android:textSize="21sp"
+        tools:text="Material title"/>
+
+    <LinearLayout
+        android:id="@+id/ll_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/base_dialog_content_title_paddingLeft"
+        android:paddingRight="@dimen/base_dialog_content_title_paddingLeft">
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.3"
+            android:textColor="#8a000000"
+            android:textSize="16sp"
+            tools:text="message"/>
+    </LinearLayout>
+
+    <!--</ScrollView>-->
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/btn_negative"
+            style="@style/Base_ActionButton"
+            android:stateListAnimator="@null"
+            android:textColor="@color/base_btn_negative"
+            tools:text="CANCEL"/>
+
+        <Button
+            android:id="@+id/btn_neutral"
+            style="@style/Base_ActionButton"
+            android:layout_marginLeft="5dp"
+            android:stateListAnimator="@null"
+            android:textColor="#ff239ff2"
+            tools:text="不再提示"/>
+
+        <Button
+            android:id="@+id/btn_positive"
+            style="@style/Base_ActionButton"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="12dp"
+            android:stateListAnimator="@null"
+            android:textColor="#ff239ff2"
+            tools:text="OK"/>
+    </LinearLayout>
+
+</LinearLayout>

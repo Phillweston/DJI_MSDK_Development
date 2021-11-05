@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rl_secondary_fpv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fpv_background">
+
+        <com.ew.autofly.widgets.dji.DjiVideoWidget
+            android:id="@+id/fpv_secondary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:sourceCameraNameVisibility="false"
+            app:sourceCameraSideVisibility="false"
+            app:videoSource="secondary" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_video_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/rb_video_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_pc_verify_radio_bg_blue"
+            android:button="@null"
+            android:textSize="@dimen/default_text_size_min"
+            android:gravity="center"
+            android:text="相机"
+            android:padding="4dp"
+            android:textColor="@color/white"
+            android:theme="@style/FloatButton" />
+
+        <RadioButton
+            android:id="@+id/rb_video_fpv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_pc_verify_radio_bg_blue"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="FPV"
+            android:checked="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size_min"
+            android:theme="@style/FloatButton" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/iv_expand"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_expand_right"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

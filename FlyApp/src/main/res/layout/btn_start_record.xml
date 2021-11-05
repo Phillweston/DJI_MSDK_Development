@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btn_start_record"
+    android:text="开始记录"
+    android:layout_width="@dimen/map_btn_large_w_p"
+    android:layout_height="@dimen/map_btn_large_h_p"
+    android:background="@drawable/bg_common_btn_shape"
+    android:gravity="center"
+    android:textColor="@color/selector_common_btn_textcolor"
+    android:textSize="18sp">
+
+</TextView>

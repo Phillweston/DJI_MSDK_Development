@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/menu_item_normal">
+
+    <RelativeLayout
+        android:id="@+id/rl_load_task_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/menu_item_normal">
+
+        <TextView
+            android:id="@+id/tv_read"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="查看"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_read_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/icon_load_task_select_all"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="查看全部"
+            android:textColor="@color/white_7"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vep"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/rl_load_task_bottom"
+        android:background="@color/default_space_line" />
+
+    <ListView
+        android:id="@+id/mListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/vep"
+        android:divider="@null"
+        android:background="@color/menu_item_normal" />
+
+    <ProgressBar
+        android:id="@+id/pb_load_task"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/anim_loading"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/menu_item_selected"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_fastlocation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="快速定位"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size_medium" />
+
+        <ImageButton
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_close_loadtask_selector" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_title"
+        android:background="#252932"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_locate_switch"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/btn_locate_mode_switch_white_selector" />
+
+            <LinearLayout
+                android:id="@+id/ll_locate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="6dp"
+                android:layout_toLeftOf="@id/btn_locate_switch"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/defalut_heigth"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="经度:"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_medium"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_lon_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext_selector"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="度"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_small" />
+
+                    <EditText
+                        android:id="@+id/et_lon_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext_selector"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="分"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_small" />
+
+                    <EditText
+                        android:id="@+id/et_lon_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/bg_edittext_selector"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="numberDecimal"
+                        android:maxLength="6"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="秒"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/defalut_heigth"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="纬度:"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_medium"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_lat_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext_selector"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="度"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_small" />
+
+                    <EditText
+                        android:id="@+id/et_lat_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext_selector"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="分"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_small" />
+
+                    <EditText
+                        android:id="@+id/et_lat_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/bg_edittext_selector"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="numberDecimal"
+                        android:maxLength="6"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="秒"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_locate_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="6dp"
+                android:layout_toLeftOf="@id/btn_locate_switch"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/defalut_heigth"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="经度:"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_medium"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_lon_ten"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext_selector"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="度"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_small" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/defalut_heigth"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="纬度:"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_medium"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_lat_ten"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext_selector"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="度"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/defalut_heigth"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_clean"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/tv_loadtask_load_radius"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="清空"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_locator"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/tv_loadtask_load_radius"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="确定"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

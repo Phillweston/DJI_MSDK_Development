@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_add_new_tower"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:gravity="center"
+    android:paddingBottom="4pt"
+    android:paddingRight="4pt"
+    android:visibility="gone">
+
+
+    <ImageView
+        android:id="@+id/iv_new_tower"
+        android:layout_width="@dimen/map_btn_small_p"
+        android:layout_height="@dimen/map_btn_small_p"
+        android:background="@drawable/bg_common_btn_shape"
+        android:src="@drawable/selector_btn_add_new_tower"/>
+
+    <ImageView
+        android:id="@+id/iv_save_tower"
+        android:layout_width="@dimen/map_btn_small_p"
+        android:layout_height="@dimen/map_btn_small_p"
+        android:layout_marginLeft="4pt"
+        android:src="@drawable/selector_btn_confirm_add_tower"/>
+
+    <ImageView
+        android:id="@+id/iv_cancel_save_tower"
+        android:layout_width="@dimen/map_btn_small_p"
+        android:layout_height="@dimen/map_btn_small_p"
+        android:layout_marginLeft="4pt"
+        android:src="@drawable/selector_btn_cancel_add_tower"/>
+
+</LinearLayout>
+

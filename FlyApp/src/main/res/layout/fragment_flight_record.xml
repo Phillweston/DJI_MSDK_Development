@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/default_background">
+
+    <RelativeLayout
+        android:id="@+id/rl_left"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_flight_recrod_left_menu">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="@dimen/flight_record_left_menu_btn_width"
+                android:layout_height="@dimen/flight_record_left_menu_btn_height"
+                android:background="@drawable/bg_flight_recrod_left_menu_btn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/flight_record_left_menu_btn_icon_margin_left"
+                    android:src="@drawable/ic_flight_record_time"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/flight_record_left_menu_btn_text_margin_left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="总飞行时间"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/flight_record_left_menu_btn_text1_size"/>
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0小时0分钟"
+                        android:textColor="@color/default_gray"
+                        android:textSize="@dimen/flight_record_left_menu_btn_text2_size"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="@dimen/flight_record_left_menu_btn_width"
+                android:layout_height="@dimen/flight_record_left_menu_btn_height"
+                android:layout_marginTop="@dimen/flight_record_left_menu_btn_margin_top"
+                android:background="@drawable/bg_flight_recrod_left_menu_btn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/flight_record_left_menu_btn_icon_margin_left"
+                    android:src="@drawable/ic_flight_record_miles"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/flight_record_left_menu_btn_text_margin_left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="总飞行里程"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/flight_record_left_menu_btn_text1_size"/>
+
+                    <TextView
+                        android:id="@+id/tv_mile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0m"
+                        android:textColor="@color/default_gray"
+                        android:textSize="@dimen/flight_record_left_menu_btn_text2_size"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="@dimen/flight_record_left_menu_btn_width"
+                android:layout_height="@dimen/flight_record_left_menu_btn_height"
+                android:layout_marginTop="@dimen/flight_record_left_menu_btn_margin_top"
+                android:background="@drawable/bg_flight_recrod_left_menu_btn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/flight_record_left_menu_btn_icon_margin_left"
+                    android:src="@drawable/ic_flight_record_num"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/flight_record_left_menu_btn_text_margin_left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="飞行次数"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/flight_record_left_menu_btn_text1_size"/>
+
+                    <TextView
+                        android:id="@+id/tv_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0次"
+                        android:textColor="@color/default_gray"
+                        android:textSize="@dimen/flight_record_left_menu_btn_text2_size"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="@dimen/flight_record_left_menu_btn_width"
+                android:layout_height="@dimen/flight_record_left_menu_btn_height"
+                android:layout_marginTop="@dimen/flight_record_left_menu_btn_margin_top"
+                android:background="@drawable/bg_flight_recrod_left_menu_btn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/flight_record_left_menu_btn_icon_margin_left"
+                    android:src="@drawable/ic_flight_record_max_distance"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/flight_record_left_menu_btn_text_margin_left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="最长里程"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/flight_record_left_menu_btn_text1_size"/>
+
+                    <TextView
+                        android:id="@+id/tv_max_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0m"
+                        android:textColor="@color/default_gray"
+                        android:textSize="@dimen/flight_record_left_menu_btn_text2_size"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_export_flight_record"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_checkbox_text_checked"
+            android:textColor="@color/default_blue"
+            android:textSize="12sp"
+            android:text="导出记录"
+            android:padding="2dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:id="@+id/ll_table_head"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/rl_left"
+        android:background="@color/default_title_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="26dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日期"
+            android:textColor="@color/default_blue"
+            android:textSize="@dimen/flight_record_list_title_text_size"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="里程"
+            android:textColor="@color/default_blue"
+            android:textSize="@dimen/flight_record_list_title_text_size"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="经纬度(E/N)"
+            android:textColor="@color/default_blue"
+            android:textSize="@dimen/flight_record_list_title_text_size"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="用时"
+            android:textColor="@color/default_blue"
+            android:textSize="@dimen/flight_record_list_title_text_size"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="最大高度"
+            android:textColor="@color/default_blue"
+            android:textSize="@dimen/flight_record_list_title_text_size"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_table_head"
+        android:layout_toRightOf="@id/rl_left">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/iv_loading"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/tv_no_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="暂无记录"
+            android:textColor="@color/default_gray"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

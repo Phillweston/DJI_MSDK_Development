@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ly_finepatrol_additional_operation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ew.autofly.widgets.switchview.SwitchButton
+        android:id="@+id/sw_3d_task"
+        android:layout_width="wrap_content"
+        android:layout_height="30pt"
+        android:layout_centerVertical="true"
+        android:padding="4pt"
+        android:visibility="gone"
+        app:off_icon="@drawable/ic_3d_unselect"
+        app:on_icon="@drawable/ic_3d_selected" />
+
+    <RelativeLayout
+        android:id="@+id/rl_record_tower_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10pt"
+        android:visibility="gone">
+
+        <com.flycloud.autofly.ux.view.RollPickerView
+            android:id="@+id/tower_component_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="90pt"
+            android:layout_centerHorizontal="true"
+            android:background="@color/menu_item_normal"
+            app:npv_DividerColor="@color/default_blue"
+            app:npv_ItemPaddingHorizontal="5pt"
+            app:npv_ItemPaddingVertical="5pt"
+            app:npv_ShowCount="3"
+            app:npv_TextColorNormal="@color/white"
+            app:npv_TextColorSelected="@color/default_blue"
+            app:npv_TextSizeNormal="12sp"
+            app:npv_TextSizeSelected="16sp"
+            app:npv_WrapSelectorWheel="false" />
+
+        <TextView
+            android:id="@+id/tv_record_tower_component_count"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10pt"
+            android:layout_toRightOf="@id/tower_component_picker"
+            android:background="@color/menu_item_normal"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <com.ew.autofly.widgets.component.flight.FlightDashBoardWidget
+        android:id="@+id/widget_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"/>
+
+    <include
+        android:id="@+id/widgets_study"
+        layout="@layout/layout_study_waypoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/map_btn_margin_bottom_p"
+        android:layout_marginBottom="@dimen/map_btn_margin_bottom_p"
+        android:visibility="gone" />
+
+</RelativeLayout>

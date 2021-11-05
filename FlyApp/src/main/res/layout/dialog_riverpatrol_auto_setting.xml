@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/menu_item_selected"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="河道巡视"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size_medium" />
+
+        <ImageButton
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_close_loadtask_selector" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line_hor_gray"
+        android:layout_marginBottom="3dip"
+        android:background="#00000000" />
+
+    <RadioGroup
+        android:id="@+id/rg_mode"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/rb_auto_mode"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_dlg_radio_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="巡检模式"
+            android:textColor="@drawable/selector_dlg_radio_text" />
+
+        <RadioButton
+            android:id="@+id/rb_study_mode"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_dlg_radio_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="学习模式"
+            android:textColor="@drawable/selector_dlg_radio_text" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/panel_patrol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/menu_item_normal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <RadioGroup
+            android:id="@+id/rg_route_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="航线模式："
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/rb_curve"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@drawable/selector_check1"
+                android:checked="true"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:paddingLeft="5dp"
+                android:text="协调转弯"
+                android:textColor="@drawable/selector_dlg_radio_text1"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_point_to_point"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:button="@drawable/selector_check1"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="点到点"
+                android:textColor="@drawable/selector_dlg_radio_text1"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+        <View
+            style="@style/line_hor_gray"
+            android:background="@color/white_7" />
+
+        <LinearLayout
+            android:id="@+id/ll_altitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="@dimen/seekbar_title_tv_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="起降航高："
+                android:textColor="@color/white"
+                android:textSize="@dimen/top_bar_font_micro" />
+
+            <com.ew.autofly.widgets.CustomBar
+                android:id="@+id/sb_altitude"
+                style="@style/Widget.SeekBar.Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:thumbOffset="@dimen/seekbar_offset" />
+
+            <TextView
+                android:id="@+id/tv_altitude"
+                android:layout_width="@dimen/seekbar_value_tv_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fly_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/seekbar_title_tv_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="飞行速度："
+                android:textColor="@color/white"
+                android:textSize="@dimen/top_bar_font_micro" />
+
+            <com.ew.autofly.widgets.CustomBar
+                android:id="@+id/sb_fly_speed"
+                style="@style/Widget.SeekBar.Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:thumbOffset="@dimen/seekbar_offset" />
+
+            <TextView
+                android:id="@+id/tv_fly_speed"
+                android:layout_width="@dimen/seekbar_value_tv_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/panel_study"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/menu_item_normal"
+        android:text="学习模式不需要设置参数"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+    <View
+        style="@style/line_hor_gray"
+        android:layout_below="@id/rl_title"
+        android:background="@color/white_7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#252932"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tv_ok"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="确定"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

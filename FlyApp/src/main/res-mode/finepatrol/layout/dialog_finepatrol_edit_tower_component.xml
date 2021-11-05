@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/menu_item_selected"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/tv_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_close_loadtask_selector" />
+
+        <TextView
+            android:id="@+id/tv_loadtask_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="编辑杆塔部件"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size_medium" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@id/tv_loadtask_title"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/tv_loadtask_title"
+            android:padding="1dp"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_sep"
+        style="@style/line_hor_gray"
+        android:layout_below="@id/rl_title"
+        android:layout_marginBottom="3dip"
+        android:background="@color/dialog_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_load_task_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/menu_item_normal">
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="新增"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_preview"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_add"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="预览"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tv_loadtask_load_radius"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="确认"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_switch_content"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/v_sep"
+        android:background="@color/default_title_background"
+        app:tabIndicatorHeight="2dp"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="@color/blue"
+        app:tabIndicatorColor="@color/blue"
+        app:tabMode="fixed"
+        app:tabGravity="fill" />
+
+    <com.flycloud.autofly.ux.view.android.ANoScrollViewPager
+        android:id="@+id/vp_component_list_pager"
+        android:layout_below="@id/tl_switch_content"
+        android:layout_width="match_parent"
+        android:layout_above="@id/rl_load_task_bottom"
+        android:layout_height="260dp"
+        android:background="@color/gray"/>
+
+  <!--  <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_tower_component_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_load_task_bottom"
+        android:layout_below="@id/v_sep"
+        android:background="@color/gray"/>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/rl_load_task_bottom"
+        android:background="@color/default_space_line" />
+
+</RelativeLayout>
