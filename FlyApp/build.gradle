@@ -264,9 +264,9 @@ dependencies {
     /**
      * dji导入的包（end）
      */
-    implementation 'androidx.annotation:annotation:1.0.0'
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0-rc01'
-    implementation 'androidx.core:core:1.0.0'
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.core:core:1.6.0'
 
 //    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.1'
     //releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
