@@ -108,7 +108,7 @@ class LinePatrolSettingFragment : BaseFragment(), View.OnClickListener, OnSetAlt
                     )
                     bundle.putSerializable("airRoutePara", airRouteParameter)
                     altitudeSetDlgFrag.arguments = bundle
-                    altitudeSetDlgFrag.show(fragmentManager, "line_altitude_setting")
+                    altitudeSetDlgFrag.show(fragmentManager!!, "line_altitude_setting")
                     llAltitude!!.visibility = View.GONE
                     saveTask()
                 } else {
