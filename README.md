@@ -1,6 +1,6 @@
 # DJI MSDK Enterprise Development
 
-本代码为基于DJI MSDK开发的航点飞行APP例程
+本代码为基于DJI MSDK开发的航点飞行APP例程，兼容至DJI MSDK4.16（暂时不兼容MSDK5版本）
 
 ## 功能
 
@@ -11,3 +11,7 @@
 ## Bug
 
 - （待解决）APP点击左上角后会显示飞行器的状态信息，然后APP会闪退
+
+## Author
+
+- Designed by Phillweston, Devotlig
